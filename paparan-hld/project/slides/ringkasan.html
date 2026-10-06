@@ -1,27 +1,45 @@
-<section id="ringkasan" data-transition="fade" style="background:#F4F6F3;color:#16303A;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<section id="ringkasan" data-transition="fade" style="background:radial-gradient(circle at 85% 8%, #0F3644 0%, #071A22 60%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#17707A">Ringkasan</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1;color:#0F2A33">Satu site, sepuluh kolam, satu jalur data end-to-end</h2>
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#3FD0D4">Ringkasan</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:600;line-height:1.1;color:#E8F3F2">92 node sensor, satu jalur data end-to-end</h2>
 </div>
-<div style="display:flex;gap:24px">
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;border:1px solid #DCE3E0;border-radius:16px;padding:36px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1.0;color:#17707A">10</p>
-<p style="font-size:28px;color:#3E555D">kolam budidaya dipantau</p>
+<div style="display:flex;gap:72px;align-items:center">
+<div style="position:relative;width:560px;height:560px">
+<svg aria-label="Donut chart 92 node: sepuluh segmen kolam masing-masing 9 node dan satu segmen Tier 2 berisi 2 node" width="560" height="560" viewBox="0 0 560 560" style="position:absolute;left:0px;top:0px;width:560px;height:560px">
+<defs><radialGradient id="dg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3FD0D4" stop-opacity="0.18"/><stop offset="100%" stop-color="#071A22" stop-opacity="0"/></radialGradient></defs>
+<circle cx="280" cy="280" r="170" fill="url(#dg)"/>
+<circle cx="280" cy="280" r="230" fill="none" stroke="#12323D" stroke-width="56"/>
+<g transform="rotate(-90 280 280)" fill="none" stroke-width="56">
+<circle cx="280" cy="280" r="230" stroke="#2BB3B8" stroke-dasharray="135.37 1445.13" stroke-dashoffset="0"/>
+<circle cx="280" cy="280" r="230" stroke="#3FD0D4" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-141.37"/>
+<circle cx="280" cy="280" r="230" stroke="#2BB3B8" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-282.74"/>
+<circle cx="280" cy="280" r="230" stroke="#3FD0D4" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-424.12"/>
+<circle cx="280" cy="280" r="230" stroke="#2BB3B8" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-565.49"/>
+<circle cx="280" cy="280" r="230" stroke="#3FD0D4" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-706.86"/>
+<circle cx="280" cy="280" r="230" stroke="#2BB3B8" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-848.23"/>
+<circle cx="280" cy="280" r="230" stroke="#3FD0D4" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-989.6"/>
+<circle cx="280" cy="280" r="230" stroke="#2BB3B8" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-1130.97"/>
+<circle cx="280" cy="280" r="230" stroke="#3FD0D4" stroke-dasharray="135.37 1445.13" stroke-dashoffset="-1272.35"/>
+<circle cx="280" cy="280" r="230" stroke="#FFB547" stroke-dasharray="25.42 1445.13" stroke-dashoffset="-1413.72"/>
+</g>
+<circle cx="280" cy="280" r="190" fill="none" stroke="#3FD0D4" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="3 7"/>
+</svg>
+<p style="position:absolute;left:80px;top:180px;width:400px;font-family:'Space Grotesk', Arial, sans-serif;font-size:150px;font-weight:700;line-height:1.0;text-align:center;color:#E8F3F2">92</p>
+<p style="position:absolute;left:80px;top:340px;width:400px;font-size:28px;text-align:center;color:#9DBDC2">sensor node</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;border:1px solid #DCE3E0;border-radius:16px;padding:36px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1.0;color:#17707A">92</p>
-<p style="font-size:28px;color:#3E555D">sensor node: 90 di kolam + 2 cuaca</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;align-items:center;gap:16px"><div style="width:28px;height:28px;background:#3FD0D4;border-radius:6px"></div><p style="font-size:30px;color:#E8F3F2"><b>90 node Tier 1</b> — 9 sensor × 10 kolam</p></div>
+<div style="display:flex;align-items:center;gap:16px"><div style="width:28px;height:28px;background:#FFB547;border-radius:6px"></div><p style="font-size:30px;color:#E8F3F2"><b>2 node Tier 2</b> — cuaca, bersama 1 site</p></div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;border:1px solid #DCE3E0;border-radius:16px;padding:36px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1.0;color:#17707A">4</p>
-<p style="font-size:28px;color:#3E555D">segmen bus RS485 Modbus RTU</p>
+<div style="display:flex;gap:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0E2A35;border:1px solid #1E4552;border-radius:16px;padding:28px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.0;color:#5EE6B0">10</p><p style="font-size:26px;color:#9DBDC2">kolam dipantau</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0E2A35;border:1px solid #1E4552;border-radius:16px;padding:28px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.0;color:#F5D35B">4</p><p style="font-size:26px;color:#9DBDC2">segmen RS485</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0E2A35;border:1px solid #1E4552;border-radius:16px;padding:28px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.0;color:#B79BFF">1–5</p><p style="font-size:26px;color:#9DBDC2">menit / siklus</p></div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:8px;background:#FFFFFF;border:1px solid #DCE3E0;border-radius:16px;padding:36px">
-<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1.0;color:#17707A">1–5</p>
-<p style="font-size:28px;color:#3E555D">menit per siklus polling</p>
+<p style="font-size:30px;line-height:1.45;color:#CFE3E4">Sensor dibaca <b>Edge Unit</b> di lokasi, dikirim ke cloud lewat <b>4G</b>, diolah jadi informasi dan alert, lalu menyalakan <b>aerator/pompa</b> — otomatis atau manual.</p>
 </div>
 </div>
-<p style="font-size:36px;line-height:1.45;color:#16303A;width:1500px">Sensor di tiap kolam dibaca <b>Edge Unit</b> di lokasi, dikirim ke cloud lewat <b>4G</b>, diolah jadi informasi dan alert, lalu dipakai untuk menyalakan <b>aerator/pompa</b> — otomatis atau manual oleh petambak.</p>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A6D74">SmartAqua Pond · High-Level Design · 2</p>
-<aside>Empat angka kunci: 10 kolam, 92 node sensor (9 sensor per kolam ditambah 2 sensor cuaca bersama), 4 segmen RS485, dan siklus polling 1 sampai 5 menit. Kalimat di bawah adalah keseluruhan solusi dalam satu napas.</aside>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">SmartAqua Pond · High-Level Design · 2</p>
+<aside>Donut ini menunjukkan komposisi 92 node: sepuluh potongan teal adalah sepuluh kolam, masing-masing 9 sensor, dan potongan kecil oranye adalah 2 sensor cuaca bersama. Angka pendukung: 10 kolam, 4 segmen RS485, siklus polling 1 sampai 5 menit.</aside>
 </section>

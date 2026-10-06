@@ -1,20 +1,54 @@
-<section id="cover" data-transition="fade" style="background:#0F2A33;color:#EEF3F1;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
-<p style="font-size:26px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#5FC4C4">Paparan High-Level Design</p>
-<div style="display:flex;flex-direction:column;gap:32px">
-<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:140px;font-weight:700;line-height:1.0;color:#EEF3F1">SmartAqua Pond</h1>
-<p style="font-size:40px;line-height:1.35;color:#A9C3C6;width:1400px">Monitoring kualitas air real-time dan kontrol otomatis aerator/pompa untuk 10 kolam budidaya — dari sensor di kolam sampai dashboard petambak.</p>
+<section id="cover" data-transition="fade" style="background:radial-gradient(circle at 72% 45%, #0F3A47 0%, #071A22 62%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
+<svg aria-label="Ilustrasi kolam dengan riak air, sepuluh kolam di lingkar luar dan sembilan sensor terhubung ke edge unit di tengah" width="852" height="852" viewBox="0 0 852 852" style="position:absolute;left:940px;top:114px;width:852px;height:852px">
+<defs>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3FD0D4" stop-opacity="0.45"/><stop offset="55%" stop-color="#1E7F8A" stop-opacity="0.12"/><stop offset="100%" stop-color="#071A22" stop-opacity="0"/></radialGradient>
+<linearGradient id="hub" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFC56B"/><stop offset="100%" stop-color="#F08A24"/></linearGradient>
+</defs>
+<circle cx="426" cy="426" r="420" fill="url(#glow)"/>
+<circle cx="426" cy="426" r="110" fill="none" stroke="#3FD0D4" stroke-width="2" stroke-opacity="0.7"/>
+<circle cx="426" cy="426" r="200" fill="none" stroke="#3FD0D4" stroke-width="1.5" stroke-opacity="0.35" stroke-dasharray="4 8"/>
+<circle cx="426" cy="426" r="270" fill="none" stroke="#3FD0D4" stroke-width="1.5" stroke-opacity="0.25"/>
+<circle cx="426" cy="426" r="330" fill="none" stroke="#5EE6B0" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="2 10"/>
+<circle cx="426" cy="426" r="395" fill="none" stroke="#3FD0D4" stroke-width="1" stroke-opacity="0.12"/>
+<g stroke="#3FD0D4" stroke-opacity="0.18" stroke-width="1.5">
+<line x1="426" y1="426" x2="426" y2="96"/><line x1="426" y1="426" x2="620" y2="159"/><line x1="426" y1="426" x2="740" y2="324"/><line x1="426" y1="426" x2="740" y2="528"/><line x1="426" y1="426" x2="620" y2="693"/><line x1="426" y1="426" x2="426" y2="756"/><line x1="426" y1="426" x2="232" y2="693"/><line x1="426" y1="426" x2="112" y2="528"/><line x1="426" y1="426" x2="112" y2="324"/><line x1="426" y1="426" x2="232" y2="159"/>
+</g>
+<g stroke="#5EE6B0" stroke-width="2" stroke-opacity="0.75">
+<line x1="426" y1="426" x2="494" y2="238"/><line x1="426" y1="426" x2="599" y2="326"/><line x1="426" y1="426" x2="623" y2="461"/><line x1="426" y1="426" x2="555" y2="579"/><line x1="426" y1="426" x2="426" y2="626"/><line x1="426" y1="426" x2="297" y2="579"/><line x1="426" y1="426" x2="229" y2="461"/><line x1="426" y1="426" x2="253" y2="326"/><line x1="426" y1="426" x2="358" y2="238"/>
+</g>
+<g fill="#0E3442" stroke="#3FD0D4" stroke-width="2">
+<rect x="396" y="74" width="60" height="44" rx="10"/><rect x="590" y="137" width="60" height="44" rx="10"/><rect x="710" y="302" width="60" height="44" rx="10"/><rect x="710" y="506" width="60" height="44" rx="10"/><rect x="590" y="671" width="60" height="44" rx="10"/><rect x="396" y="734" width="60" height="44" rx="10"/><rect x="202" y="671" width="60" height="44" rx="10"/><rect x="82" y="506" width="60" height="44" rx="10"/><rect x="82" y="302" width="60" height="44" rx="10"/><rect x="202" y="137" width="60" height="44" rx="10"/>
+</g>
+<g fill="#3FD0D4" fill-opacity="0.35">
+<rect x="406" y="92" width="40" height="4" rx="2"/><rect x="600" y="155" width="40" height="4" rx="2"/><rect x="720" y="320" width="40" height="4" rx="2"/><rect x="720" y="524" width="40" height="4" rx="2"/><rect x="600" y="689" width="40" height="4" rx="2"/><rect x="406" y="752" width="40" height="4" rx="2"/><rect x="212" y="689" width="40" height="4" rx="2"/><rect x="92" y="524" width="40" height="4" rx="2"/><rect x="92" y="320" width="40" height="4" rx="2"/><rect x="212" y="155" width="40" height="4" rx="2"/>
+</g>
+<g fill="#5EE6B0" fill-opacity="0.22">
+<circle cx="494" cy="238" r="24"/><circle cx="599" cy="326" r="24"/><circle cx="623" cy="461" r="24"/><circle cx="555" cy="579" r="24"/><circle cx="426" cy="626" r="24"/><circle cx="297" cy="579" r="24"/><circle cx="229" cy="461" r="24"/><circle cx="253" cy="326" r="24"/><circle cx="358" cy="238" r="24"/>
+</g>
+<g fill="#5EE6B0">
+<circle cx="494" cy="238" r="10"/><circle cx="599" cy="326" r="10"/><circle cx="623" cy="461" r="10"/><circle cx="555" cy="579" r="10"/><circle cx="426" cy="626" r="10"/><circle cx="297" cy="579" r="10"/><circle cx="229" cy="461" r="10"/><circle cx="253" cy="326" r="10"/><circle cx="358" cy="238" r="10"/>
+</g>
+<circle cx="426" cy="426" r="78" fill="#F08A24" fill-opacity="0.18"/>
+<polygon points="474.5,398 474.5,454 426,482 377.5,454 377.5,398 426,370" fill="url(#hub)" stroke="#FFE2B0" stroke-width="2"/>
+<rect x="404" y="410" width="44" height="32" rx="6" fill="#071A22" fill-opacity="0.55"/>
+<rect x="412" y="418" width="28" height="4" rx="2" fill="#FFC56B"/><rect x="412" y="428" width="18" height="4" rx="2" fill="#5EE6B0"/>
+</svg>
+<p style="font-size:26px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#3FD0D4">Paparan High-Level Design</p>
+<div style="display:flex;flex-direction:column;gap:32px;width:860px">
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:132px;font-weight:700;line-height:0.98;color:#E8F3F2">SmartAqua<br><span style="color:#3FD0D4">Pond</span></h1>
+<p style="font-size:36px;line-height:1.4;color:#9DBDC2">Monitoring kualitas air real-time dan kontrol otomatis aerator/pompa untuk 10 kolam budidaya.</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:24px">
 <div style="display:flex;gap:10px">
-<div style="width:120px;height:12px;background:#7FB878;border-radius:6px"></div>
-<div style="width:120px;height:12px;background:#E3C65A;border-radius:6px"></div>
-<div style="width:120px;height:12px;background:#E9A04E;border-radius:6px"></div>
-<div style="width:120px;height:12px;background:#A98BC4;border-radius:6px"></div>
-<div style="width:120px;height:12px;background:#7FA6DA;border-radius:6px"></div>
-<div style="width:120px;height:12px;background:#D9827A;border-radius:6px"></div>
-<div style="width:120px;height:12px;background:#A8A8A8;border-radius:6px"></div>
+<div style="width:96px;height:10px;background:#5EE6B0;border-radius:5px"></div>
+<div style="width:96px;height:10px;background:#F5D35B;border-radius:5px"></div>
+<div style="width:96px;height:10px;background:#FFB547;border-radius:5px"></div>
+<div style="width:96px;height:10px;background:#B79BFF;border-radius:5px"></div>
+<div style="width:96px;height:10px;background:#5AA9FF;border-radius:5px"></div>
+<div style="width:96px;height:10px;background:#FF8A7A;border-radius:5px"></div>
+<div style="width:96px;height:10px;background:#A9B8BC;border-radius:5px"></div>
 </div>
-<p style="font-size:28px;color:#A9C3C6">[Nama Presenter] · [Instansi / Tim] · [Tanggal Paparan]</p>
+<p style="font-size:28px;color:#9DBDC2">[Nama Presenter] · [Instansi / Tim] · [Tanggal Paparan]</p>
 </div>
-<aside>Pembuka. SmartAqua Pond adalah sistem IoT untuk memantau kualitas air kolam budidaya secara real-time dan mengendalikan aerator serta pompa. Tujuh garis warna di bawah mewakili tujuh layer arsitektur yang akan kita bahas, dari Field sampai Actuation.</aside>
+<aside>Pembuka. SmartAqua Pond adalah sistem IoT untuk memantau kualitas air kolam budidaya secara real-time dan mengendalikan aerator serta pompa. Ilustrasi di kanan: edge unit di tengah, sembilan sensor per kolam, dan sepuluh kolam di lingkar luar. Tujuh garis warna di bawah mewakili tujuh layer arsitektur.</aside>
 </section>

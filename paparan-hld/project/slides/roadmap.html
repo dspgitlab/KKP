@@ -1,36 +1,47 @@
-<section id="roadmap" data-transition="fade" style="background:#F4F6F3;color:#16303A;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<section id="roadmap" data-transition="fade" style="background:radial-gradient(circle at 15% 40%, #0F3644 0%, #071A22 60%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#17707A">Roadmap</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1;color:#0F2A33">Lima tahap, fondasi lapangan sudah didesain</h2>
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#3FD0D4">Roadmap</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:600;line-height:1.1;color:#E8F3F2">Lima tahap, fondasi lapangan sudah didesain</h2>
 </div>
-<div style="display:flex;gap:20px">
-<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#0F2A33;border-radius:16px;padding:30px">
-<p style="font-size:24px;font-weight:600;color:#5FC4C4">TAHAP 1 · DIDESAIN</p>
-<h3 style="font-size:32px;font-weight:600;color:#EEF3F1">Fondasi site</h3>
-<p style="font-size:26px;line-height:1.45;color:#C9DADB">Sensor, kabel &amp; RS485, edge, cabinet, uplink 4G</p>
+<svg aria-label="Timeline lima tahap: tahap 1 terisi menyala sebagai posisi saat ini, tahap 2 sampai 5 berupa lingkaran putus-putus" width="1664" height="120" viewBox="0 0 1664 120" style="width:1664px;height:120px">
+<defs><linearGradient id="prog" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#3FD0D4"/><stop offset="100%" stop-color="#3FD0D4" stop-opacity="0"/></linearGradient></defs>
+<line x1="157" y1="60" x2="1507" y2="60" stroke="#1E4552" stroke-width="6" stroke-linecap="round"/>
+<line x1="157" y1="60" x2="420" y2="60" stroke="url(#prog)" stroke-width="6" stroke-linecap="round"/>
+<circle cx="157" cy="60" r="50" fill="#3FD0D4" fill-opacity="0.18"/>
+<circle cx="157" cy="60" r="28" fill="#3FD0D4" stroke="#B8F4F2" stroke-width="3"/>
+<path d="M144 60 L153 70 L172 50" fill="none" stroke="#071A22" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#071A22" stroke-width="4" stroke-dasharray="6 5">
+<circle cx="494" cy="60" r="22" stroke="#5AA9FF"/><circle cx="832" cy="60" r="22" stroke="#FF8A7A"/><circle cx="1170" cy="60" r="22" stroke="#A9B8BC"/><circle cx="1507" cy="60" r="22" stroke="#5AA9FF"/>
+</g>
+</svg>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:linear-gradient(160deg, #1B6E78, #0E3E4A);border-radius:16px;padding:28px;box-shadow:0 0 40px rgba(63,208,212,0.25)">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#B8F4F2">TAHAP 1 · DIDESAIN</p>
+<h3 style="font-size:32px;font-weight:600;color:#E8F3F2">Fondasi site</h3>
+<p style="font-size:26px;line-height:1.45;color:#D6ECEC">Sensor, kabel &amp; RS485, edge, cabinet, uplink 4G</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;border:2px dashed #7FA6DA;border-radius:16px;padding:30px">
-<p style="font-size:24px;font-weight:600;color:#2F5689">TAHAP 2</p>
-<h3 style="font-size:32px;font-weight:600">Backend inti</h3>
-<p style="font-size:26px;line-height:1.45;color:#3E555D">MQTT broker, API, NH3, time-series DB</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0E2A35;border:2px dashed #5AA9FF;border-radius:16px;padding:28px">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#5AA9FF">TAHAP 2</p>
+<h3 style="font-size:32px;font-weight:600;color:#E8F3F2">Backend inti</h3>
+<p style="font-size:26px;line-height:1.45;color:#9DBDC2">MQTT broker, API, NH3, time-series DB</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;border:2px dashed #D9827A;border-radius:16px;padding:30px">
-<p style="font-size:24px;font-weight:600;color:#8A2F28">TAHAP 3</p>
-<h3 style="font-size:32px;font-weight:600">Aplikasi</h3>
-<p style="font-size:26px;line-height:1.45;color:#3E555D">Dashboard web/mobile, notifikasi</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0E2A35;border:2px dashed #FF8A7A;border-radius:16px;padding:28px">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#FF8A7A">TAHAP 3</p>
+<h3 style="font-size:32px;font-weight:600;color:#E8F3F2">Aplikasi</h3>
+<p style="font-size:26px;line-height:1.45;color:#9DBDC2">Dashboard web/mobile, notifikasi</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;border:2px dashed #9A9A9A;border-radius:16px;padding:30px">
-<p style="font-size:24px;font-weight:600;color:#4A4A4A">TAHAP 4</p>
-<h3 style="font-size:32px;font-weight:600">Kontrol</h3>
-<p style="font-size:26px;line-height:1.45;color:#3E555D">Kontrol otomatis + override, relay → aerator/pompa</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0E2A35;border:2px dashed #A9B8BC;border-radius:16px;padding:28px">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#C9D5D8">TAHAP 4</p>
+<h3 style="font-size:32px;font-weight:600;color:#E8F3F2">Kontrol</h3>
+<p style="font-size:26px;line-height:1.45;color:#9DBDC2">Kontrol otomatis + override, relay → aerator/pompa</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;border:2px dashed #7FA6DA;border-radius:16px;padding:30px">
-<p style="font-size:24px;font-weight:600;color:#2F5689">TAHAP 5</p>
-<h3 style="font-size:32px;font-weight:600">Kecerdasan</h3>
-<p style="font-size:26px;line-height:1.45;color:#3E555D">AI/ML: prediksi tren &amp; deteksi anomali</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0E2A35;border:2px dashed #5AA9FF;border-radius:16px;padding:28px">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#5AA9FF">TAHAP 5</p>
+<h3 style="font-size:32px;font-weight:600;color:#E8F3F2">Kecerdasan</h3>
+<p style="font-size:26px;line-height:1.45;color:#9DBDC2">AI/ML: prediksi tren &amp; deteksi anomali</p>
 </div>
 </div>
-<p style="font-size:30px;line-height:1.45;width:1400px">Tahap 1 sudah menyiapkan data yang andal dari lapangan; tahap berikutnya membangun lapisan yang <b>mengolah, menampilkan, dan menindaklanjuti</b> data tersebut.</p>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A6D74">Jadwal per tahap: [diisi] · SmartAqua Pond · 13</p>
-<aside>Pembagian tahap mengikuti label di diagram HLD: backend di Tahap 2 dan 5, aplikasi di Tahap 3 dan 4, aktuasi di Tahap 4. Rincian per tahap di slide ini adalah interpretasi dari pembagian tersebut; jadwal dan durasi tiap tahap belum ditentukan.</aside>
+<p style="font-size:30px;line-height:1.45;width:1400px;color:#CFE3E4">Tahap 1 menyiapkan data yang andal dari lapangan; tahap berikutnya <b style="color:#3FD0D4">mengolah, menampilkan, dan menindaklanjuti</b> data tersebut.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">Jadwal per tahap: [diisi] · SmartAqua Pond · 13</p>
+<aside>Pembagian tahap mengikuti label di diagram HLD: backend di Tahap 2 dan 5, aplikasi di Tahap 3 dan 4, aktuasi di Tahap 4. Rincian per tahap di slide ini adalah interpretasi dari pembagian tersebut; jadwal dan durasi tiap tahap belum ditentukan. Titik terang di kiri menandai posisi saat ini.</aside>
 </section>

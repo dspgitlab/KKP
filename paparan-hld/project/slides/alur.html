@@ -1,18 +1,38 @@
-<section id="alur" data-transition="fade" style="background:#F4F6F3;color:#16303A;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#17707A">Alur data &amp; kontrol</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1;color:#0F2A33">Satu siklus polling, dari sensor sampai aksi di kolam</h2>
-</div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px">
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #E9A04E;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#8A4F06">1</p><p style="font-size:26px;line-height:1.4">Siklus mulai (1–5 menit). Edge aktif sehat? Bila tidak, cadangan ambil alih.</p></div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #E9A04E;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#8A4F06">2</p><p style="font-size:26px;line-height:1.4">Polling Modbus RTU round-robin A → B → C → D, 92 node.</p></div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #E9A04E;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#8A4F06">3</p><p style="font-size:26px;line-height:1.4">Simpan ke buffer lokal. Cloud putus? Tahan dan retry saat pulih.</p></div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #A98BC4;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#5B3F74">4</p><p style="font-size:26px;line-height:1.4">Publish MQTT / HTTPS lewat router 4G atau WiFi.</p></div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #7FA6DA;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#2F5689">5</p><p style="font-size:26px;line-height:1.4">Broker → API: hitung NH3, simpan ke time-series DB.</p></div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #7FA6DA;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#2F5689">6</p><p style="font-size:26px;line-height:1.4">Analisis: cek ambang batas + AI/ML anomali dan prediksi.</p></div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #D9827A;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#8A2F28">7</p><p style="font-size:26px;line-height:1.4">Normal: tampil di dashboard. Lewat batas: notifikasi ke petambak.</p></div>
-<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;border-top:8px solid #9A9A9A;border-radius:14px;padding:26px"><p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#4A4A4A">8</p><p style="font-size:26px;line-height:1.4">Kontrol otomatis / override → relay → aerator atau pompa ON.</p></div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A6D74">Warna: oranye Edge · ungu Transport · biru Backend · merah Aplikasi · abu Aktuator · SmartAqua Pond · 10</p>
-<aside>Delapan langkah satu siklus. Di sisi edge: cek kesehatan edge aktif, polling 92 node bergiliran per segmen, simpan ke buffer. Kalau koneksi cloud tersedia, data dipublish; kalau tidak, ditahan dan dikirim ulang. Di cloud: hitung NH3, simpan, analisis ambang batas dan anomali. Kalau normal, cukup tampil di dashboard. Kalau ada pelanggaran batas, petambak dinotifikasi dan modul kontrol bisa menyalakan aerator atau pompa, atau petambak override manual. Setelah itu siklus berikutnya dimulai.</aside>
+<section id="alur" data-transition="fade" style="background:radial-gradient(circle at 50% 58%, #103A48 0%, #071A22 55%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#3FD0D4">Alur data &amp; kontrol</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:600;line-height:1.1;color:#E8F3F2">Satu siklus polling, dari sensor sampai aksi</h2>
+<svg aria-label="Lintasan siklus searah jarum jam dengan delapan langkah: empat di sisi atas dari kiri ke kanan, empat di sisi bawah dari kanan ke kiri" width="1664" height="600" viewBox="0 0 1664 600" style="position:absolute;left:128px;top:330px;width:1664px;height:600px">
+<defs><linearGradient id="trk" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#FFB547"/><stop offset="50%" stop-color="#B79BFF"/><stop offset="100%" stop-color="#5AA9FF"/></linearGradient></defs>
+<rect x="108" y="140" width="1448" height="260" rx="130" fill="#3FD0D4" fill-opacity="0.04" stroke="url(#trk)" stroke-opacity="0.2" stroke-width="22"/>
+<rect x="108" y="140" width="1448" height="260" rx="130" fill="none" stroke="url(#trk)" stroke-width="5"/>
+<g fill="#E8F3F2">
+<polygon points="464,128 482,140 464,152"/><polygon points="824,128 842,140 824,152"/><polygon points="1184,128 1202,140 1184,152"/>
+<polygon points="1200,388 1182,400 1200,412"/><polygon points="840,388 822,400 840,412"/><polygon points="480,388 462,400 480,412"/>
+<polygon points="1544,262 1556,280 1568,262"/><polygon points="96,278 108,260 120,278"/>
+</g>
+<g stroke="#071A22" stroke-width="5">
+<circle cx="292" cy="140" r="44" fill="#FFB547"/><circle cx="652" cy="140" r="44" fill="#FFB547"/><circle cx="1012" cy="140" r="44" fill="#FFB547"/><circle cx="1372" cy="140" r="44" fill="#B79BFF"/>
+<circle cx="1372" cy="400" r="44" fill="#5AA9FF"/><circle cx="1012" cy="400" r="44" fill="#5AA9FF"/><circle cx="652" cy="400" r="44" fill="#FF8A7A"/><circle cx="292" cy="400" r="44" fill="#A9B8BC"/>
+</g>
+</svg>
+<p style="position:absolute;left:376px;top:440px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">1</p>
+<p style="position:absolute;left:736px;top:440px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">2</p>
+<p style="position:absolute;left:1096px;top:440px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">3</p>
+<p style="position:absolute;left:1456px;top:440px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">4</p>
+<p style="position:absolute;left:1456px;top:700px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">5</p>
+<p style="position:absolute;left:1096px;top:700px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">6</p>
+<p style="position:absolute;left:736px;top:700px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">7</p>
+<p style="position:absolute;left:376px;top:700px;width:88px;font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;text-align:center;color:#071A22">8</p>
+<p style="position:absolute;left:240px;top:318px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Cek heartbeat</b><br>edge aktif mati → cadangan ambil alih</p>
+<p style="position:absolute;left:600px;top:318px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Polling Modbus</b><br>A → B → C → D · 92 node</p>
+<p style="position:absolute;left:960px;top:318px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Buffer lokal</b><br>cloud putus → tahan &amp; retry</p>
+<p style="position:absolute;left:1320px;top:318px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Publish</b><br>MQTT / HTTPS via 4G / WiFi</p>
+<p style="position:absolute;left:1320px;top:790px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Broker → API</b><br>hitung NH3, simpan ke DB</p>
+<p style="position:absolute;left:960px;top:790px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Analisis</b><br>ambang batas + AI/ML</p>
+<p style="position:absolute;left:600px;top:790px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Normal → dashboard</b><br>lewat batas → notifikasi</p>
+<p style="position:absolute;left:240px;top:790px;width:360px;font-size:24px;line-height:1.35;text-align:center;color:#CFE3E4"><b>Aksi</b><br>kontrol / override → relay ON</p>
+<p style="position:absolute;left:660px;top:548px;width:600px;font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;text-align:center;color:#E8F3F2">1 siklus</p>
+<p style="position:absolute;left:660px;top:620px;width:600px;font-size:26px;text-align:center;color:#9DBDC2">setiap 1–5 menit, lalu berulang</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">Oranye Edge · ungu Transport · biru Backend · merah Aplikasi · abu Aktuator · SmartAqua Pond · 10</p>
+<aside>Satu siklus berjalan searah jarum jam. Sisi atas terjadi di lokasi: cek heartbeat edge, polling 92 node bergiliran per segmen, simpan ke buffer, lalu publish ke cloud; kalau internet putus, data ditahan dan dikirim ulang. Sisi bawah di cloud dan lapangan: broker dan API menghitung NH3 dan menyimpan, analisis ambang batas dan AI/ML, lalu kalau normal cukup tampil di dashboard, kalau lewat batas petambak dinotifikasi dan relay menyalakan aerator atau pompa, otomatis atau lewat override.</aside>
 </section>

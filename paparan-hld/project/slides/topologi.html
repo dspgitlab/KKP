@@ -1,42 +1,50 @@
-<section id="topologi" data-transition="fade" style="background:#F4F6F3;color:#16303A;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<section id="topologi" data-transition="fade" style="background:radial-gradient(circle at 50% 30%, #0F3644 0%, #071A22 60%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:24px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#6E5A12">Layer 2 · Topologi RS485</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1;color:#0F2A33">Empat segmen, masing-masing di bawah batas 32 unit-load</h2>
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#F5D35B">Layer 2 · Topologi RS485</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:600;line-height:1.1;color:#E8F3F2">Empat segmen, semua di bawah batas 32 unit-load</h2>
 </div>
-<div style="display:flex;align-items:center;gap:24px;background:#FCEBD6;border:2px solid #E9A04E;border-radius:14px;padding:20px 28px">
-<p style="font-size:28px;font-weight:600;color:#8A4F06">Edge Aktif · Modbus master</p>
-<p style="flex:1;font-size:26px;color:#16303A">polling round-robin A → B → C → D · Edge Cadangan standby di jalur yang sama</p>
+<div style="align-self:center;display:flex;align-items:center;gap:24px;background:linear-gradient(90deg, #F08A24, #FFB547);border-radius:40px;padding:16px 36px;box-shadow:0 0 40px rgba(255,181,71,0.35)">
+<p style="font-size:28px;font-weight:600;color:#1A1205">Edge Aktif · Modbus master</p>
+<p style="font-size:24px;color:#2A1D08">round-robin A → B → C → D · cadangan standby</p>
 </div>
+<svg aria-label="Jalur dari Edge ke empat repeater: garis oranye jalur aktif, garis abu putus-putus jalur cadangan" width="1664" height="70" viewBox="0 0 1664 70" style="width:1664px;height:70px">
+<g fill="none" stroke-width="3">
+<path d="M820 0 C820 40 199 30 199 70" stroke="#FFB547"/><path d="M826 0 C826 40 621 30 621 70" stroke="#FFB547"/><path d="M838 0 C838 40 1043 30 1043 70" stroke="#FFB547"/><path d="M844 0 C844 40 1465 30 1465 70" stroke="#FFB547"/>
+</g>
+<g fill="none" stroke="#7FA0A6" stroke-width="2" stroke-dasharray="5 6">
+<path d="M808 0 C808 46 211 34 211 70"/><path d="M814 0 C814 46 633 34 633 70"/><path d="M850 0 C850 46 1031 34 1031 70"/><path d="M856 0 C856 46 1453 34 1453 70"/>
+</g>
+</svg>
 <div style="display:flex;gap:24px">
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;border:2px solid #D2B13E;border-radius:16px;padding:28px">
-<h3 style="font-size:34px;font-weight:600;color:#6E5A12">Segmen A</h3>
-<p style="font-size:26px;color:#3E555D">Repeater A</p>
-<p style="font-size:28px;line-height:1.35">Kolam 1 · 2 · 3<br>3 × 9 sensor</p>
-<div style="display:flex;height:20px;background:#E6E9E8;border-radius:10px;overflow:hidden"><div style="flex:27;background:#17707A"></div><div style="flex:5"></div></div>
-<p style="font-size:26px;font-weight:600">27 / 32 UL · aman</p>
+<div style="flex:1;position:relative;display:flex;flex-direction:column;align-items:center;gap:12px;background:#0E2A35;border:1px solid #3A4E36;border-top:6px solid #F5D35B;border-radius:16px;padding:24px">
+<p style="font-size:30px;font-weight:600;color:#F5D35B">Segmen A · Repeater A</p>
+<svg aria-label="Gauge 27 dari 32 unit-load" width="300" height="160" viewBox="0 0 300 160" style="width:300px;height:160px"><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#12323D" stroke-width="26" stroke-linecap="round"/><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#3FD0D4" stroke-width="26" stroke-linecap="round" stroke-dasharray="318.09 376.99"/></svg>
+<p style="position:absolute;left:0px;top:150px;width:398px;font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:700;text-align:center;color:#E8F3F2">27<span style="color:#7FA0A6">/32</span></p>
+<div style="display:flex;gap:10px"><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K1</p><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K2</p><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K3</p></div>
+<p style="font-size:24px;color:#9DBDC2">27 node · aman</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;border:2px solid #D2B13E;border-radius:16px;padding:28px">
-<h3 style="font-size:34px;font-weight:600;color:#6E5A12">Segmen B</h3>
-<p style="font-size:26px;color:#3E555D">Repeater B</p>
-<p style="font-size:28px;line-height:1.35">Kolam 4 · 5 · 6<br>3 × 9 sensor</p>
-<div style="display:flex;height:20px;background:#E6E9E8;border-radius:10px;overflow:hidden"><div style="flex:27;background:#17707A"></div><div style="flex:5"></div></div>
-<p style="font-size:26px;font-weight:600">27 / 32 UL · aman</p>
+<div style="flex:1;position:relative;display:flex;flex-direction:column;align-items:center;gap:12px;background:#0E2A35;border:1px solid #3A4E36;border-top:6px solid #F5D35B;border-radius:16px;padding:24px">
+<p style="font-size:30px;font-weight:600;color:#F5D35B">Segmen B · Repeater B</p>
+<svg aria-label="Gauge 27 dari 32 unit-load" width="300" height="160" viewBox="0 0 300 160" style="width:300px;height:160px"><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#12323D" stroke-width="26" stroke-linecap="round"/><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#3FD0D4" stroke-width="26" stroke-linecap="round" stroke-dasharray="318.09 376.99"/></svg>
+<p style="position:absolute;left:0px;top:150px;width:398px;font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:700;text-align:center;color:#E8F3F2">27<span style="color:#7FA0A6">/32</span></p>
+<div style="display:flex;gap:10px"><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K4</p><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K5</p><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K6</p></div>
+<p style="font-size:24px;color:#9DBDC2">27 node · aman</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;border:2px solid #D2B13E;border-radius:16px;padding:28px">
-<h3 style="font-size:34px;font-weight:600;color:#6E5A12">Segmen C</h3>
-<p style="font-size:26px;color:#3E555D">Repeater C</p>
-<p style="font-size:28px;line-height:1.35">Kolam 7 · 8 · 9<br>3 × 9 sensor</p>
-<div style="display:flex;height:20px;background:#E6E9E8;border-radius:10px;overflow:hidden"><div style="flex:27;background:#17707A"></div><div style="flex:5"></div></div>
-<p style="font-size:26px;font-weight:600">27 / 32 UL · aman</p>
+<div style="flex:1;position:relative;display:flex;flex-direction:column;align-items:center;gap:12px;background:#0E2A35;border:1px solid #3A4E36;border-top:6px solid #F5D35B;border-radius:16px;padding:24px">
+<p style="font-size:30px;font-weight:600;color:#F5D35B">Segmen C · Repeater C</p>
+<svg aria-label="Gauge 27 dari 32 unit-load" width="300" height="160" viewBox="0 0 300 160" style="width:300px;height:160px"><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#12323D" stroke-width="26" stroke-linecap="round"/><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#3FD0D4" stroke-width="26" stroke-linecap="round" stroke-dasharray="318.09 376.99"/></svg>
+<p style="position:absolute;left:0px;top:150px;width:398px;font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:700;text-align:center;color:#E8F3F2">27<span style="color:#7FA0A6">/32</span></p>
+<div style="display:flex;gap:10px"><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K7</p><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K8</p><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K9</p></div>
+<p style="font-size:24px;color:#9DBDC2">27 node · aman</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;border:2px solid #D2B13E;border-radius:16px;padding:28px">
-<h3 style="font-size:34px;font-weight:600;color:#6E5A12">Segmen D</h3>
-<p style="font-size:26px;color:#3E555D">Repeater D</p>
-<p style="font-size:28px;line-height:1.35">Kolam 10 + Tier 2<br>9 + 2 sensor</p>
-<div style="display:flex;height:20px;background:#E6E9E8;border-radius:10px;overflow:hidden"><div style="flex:11;background:#17707A"></div><div style="flex:21"></div></div>
-<p style="font-size:26px;font-weight:600">11 / 32 UL · headroom besar</p>
+<div style="flex:1;position:relative;display:flex;flex-direction:column;align-items:center;gap:12px;background:#0E2A35;border:1px solid #3A4E36;border-top:6px solid #F5D35B;border-radius:16px;padding:24px">
+<p style="font-size:30px;font-weight:600;color:#F5D35B">Segmen D · Repeater D</p>
+<svg aria-label="Gauge 11 dari 32 unit-load" width="300" height="160" viewBox="0 0 300 160" style="width:300px;height:160px"><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#12323D" stroke-width="26" stroke-linecap="round"/><path d="M30 150 A120 120 0 0 1 270 150" fill="none" stroke="#5EE6B0" stroke-width="26" stroke-linecap="round" stroke-dasharray="129.59 376.99"/></svg>
+<p style="position:absolute;left:0px;top:150px;width:398px;font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:700;text-align:center;color:#E8F3F2">11<span style="color:#7FA0A6">/32</span></p>
+<div style="display:flex;gap:10px"><p style="font-size:24px;background:#163F4D;border-radius:8px;padding:8px 16px">K10</p><p style="font-size:24px;background:#3A2F14;color:#FFB547;border-radius:8px;padding:8px 16px">Tier 2</p></div>
+<p style="font-size:24px;color:#9DBDC2">11 node · headroom besar</p>
 </div>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A6D74">Daisy-chain di dalam segmen · repeater mengisolasi galvanik antar segmen · SmartAqua Pond · 6</p>
-<aside>Bus RS485 dibatasi 32 unit-load per segmen, jadi 92 node dipecah ke 4 segmen. Segmen A, B, C masing-masing 3 kolam atau 27 UL, masih aman di bawah 32. Segmen D hanya kolam 10 plus weather station, 11 UL, jadi ada ruang ekspansi. Tiap segmen punya repeater dengan isolasi galvanik sehingga gangguan di satu segmen tidak menjalar.</aside>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">Daisy-chain dalam segmen · repeater isolasi galvanik · oranye aktif, abu putus-putus cadangan · SmartAqua Pond · 6</p>
+<aside>Bus RS485 dibatasi 32 unit-load per segmen, jadi 92 node dipecah ke 4 segmen. Gauge menunjukkan pemakaian tiap segmen: A, B, C masing-masing 27 dari 32, masih aman. Segmen D hanya kolam 10 plus weather station, 11 dari 32, jadi ada ruang ekspansi. Edge aktif melakukan polling bergiliran; edge cadangan punya jalur ke semua repeater dan siap mengambil alih.</aside>
 </section>

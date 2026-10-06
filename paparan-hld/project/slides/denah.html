@@ -1,51 +1,70 @@
-<section id="denah" data-transition="fade" style="background:#F4F6F3;color:#16303A;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<section id="denah" data-transition="fade" style="background:radial-gradient(circle at 40% 60%, #0F3644 0%, #071A22 60%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#6E5A12">Denah site · skematik</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1;color:#0F2A33">Cabinet di tengah, repeater di antara kelompok kolam</h2>
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#F5D35B">Denah site · tampak atas</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:60px;font-weight:600;line-height:1.1;color:#E8F3F2">Cabinet di pusat, kabel menyebar ke empat repeater</h2>
 </div>
 <div style="display:flex;gap:40px;align-items:start">
-<div style="width:1120px;display:flex;flex-direction:column;gap:20px;background:#E6EFE3;border:2px solid #7FB878;border-radius:16px;padding:28px">
-<div style="display:flex;gap:20px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FBF4DA;border:2px solid #D2B13E;border-radius:12px;padding:18px">
-<div style="display:flex;gap:10px"><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K1</p><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K2</p><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K3</p></div>
-<p style="font-size:24px;font-weight:600;text-align:center;color:#6E5A12">Repeater A</p>
+<div style="position:relative;width:1120px;height:640px">
+<svg aria-label="Peta site: sepuluh kolam dalam dua baris, cabinet IP66 di tengah dengan router 4G dan tiang Tier 2, kabel trunk oranye ke repeater A sampai D, kabel drop hijau ke tiap kolam" width="1120" height="640" viewBox="0 0 1120 640" style="position:absolute;left:0px;top:0px;width:1120px;height:640px">
+<defs>
+<linearGradient id="pw" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1D7A8C"/><stop offset="100%" stop-color="#0E4656"/></linearGradient>
+<radialGradient id="cg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#FFB547" stop-opacity="0.45"/><stop offset="100%" stop-color="#FFB547" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="0" y="0" width="1120" height="640" rx="24" fill="#10261F" stroke="#2E5A3F" stroke-width="2"/>
+<g fill="url(#pw)" stroke="#3FD0D4" stroke-opacity="0.6" stroke-width="2">
+<rect x="40" y="40" width="150" height="130" rx="14"/><rect x="205" y="40" width="150" height="130" rx="14"/><rect x="370" y="40" width="150" height="130" rx="14"/>
+<rect x="600" y="40" width="150" height="130" rx="14"/><rect x="765" y="40" width="150" height="130" rx="14"/><rect x="930" y="40" width="150" height="130" rx="14"/>
+<rect x="40" y="470" width="150" height="130" rx="14"/><rect x="205" y="470" width="150" height="130" rx="14"/><rect x="370" y="470" width="150" height="130" rx="14"/>
+<rect x="600" y="470" width="150" height="130" rx="14"/>
+</g>
+<circle cx="560" cy="320" r="150" fill="url(#cg)"/>
+<g fill="none" stroke="#5EE6B0" stroke-width="3" stroke-linejoin="round">
+<path d="M282 218 L282 195 L115 195 L115 170"/><path d="M282 218 L282 170"/><path d="M282 195 L445 195 L445 170"/>
+<path d="M842 218 L842 195 L675 195 L675 170"/><path d="M842 218 L842 170"/><path d="M842 195 L1005 195 L1005 170"/>
+<path d="M282 422 L282 445 L115 445 L115 470"/><path d="M282 422 L282 470"/><path d="M282 445 L445 445 L445 470"/>
+<path d="M760 422 L760 445 L675 445 L675 470"/><path d="M738 400 L560 400 L560 422"/>
+</g>
+<g fill="none" stroke="#FFB547" stroke-width="7" stroke-linejoin="round">
+<path d="M480 305 L282 305 L282 262"/><path d="M480 335 L282 335 L282 378"/><path d="M640 305 L842 305 L842 262"/><path d="M640 335 L760 335 L760 378"/>
+</g>
+<g fill="#F5D35B" stroke="#FFF1BC" stroke-width="2">
+<polygon points="282,218 304,240 282,262 260,240"/><polygon points="842,218 864,240 842,262 820,240"/><polygon points="282,378 304,400 282,422 260,400"/><polygon points="760,378 782,400 760,422 738,400"/>
+</g>
+<rect x="480" y="200" width="160" height="44" rx="10" fill="#2A2140" stroke="#B79BFF" stroke-width="2"/>
+<line x1="560" y1="244" x2="560" y2="280" stroke="#B79BFF" stroke-width="3"/>
+<rect x="480" y="280" width="160" height="80" rx="12" fill="#FFB547" stroke="#FFE2B0" stroke-width="3"/>
+<circle cx="560" cy="440" r="18" fill="#5EE6B0" stroke="#B9FBE2" stroke-width="3"/>
+</svg>
+<p style="position:absolute;left:40px;top:84px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K1</p>
+<p style="position:absolute;left:205px;top:84px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K2</p>
+<p style="position:absolute;left:370px;top:84px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K3</p>
+<p style="position:absolute;left:600px;top:84px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K4</p>
+<p style="position:absolute;left:765px;top:84px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K5</p>
+<p style="position:absolute;left:930px;top:84px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K6</p>
+<p style="position:absolute;left:40px;top:514px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K7</p>
+<p style="position:absolute;left:205px;top:514px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K8</p>
+<p style="position:absolute;left:370px;top:514px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K9</p>
+<p style="position:absolute;left:600px;top:514px;width:150px;font-size:26px;font-weight:600;text-align:center;color:#E8F3F2">K10</p>
+<p style="position:absolute;left:96px;top:222px;width:150px;font-size:24px;font-weight:600;text-align:right;color:#F5D35B">Repeater A</p>
+<p style="position:absolute;left:876px;top:222px;width:150px;font-size:24px;font-weight:600;color:#F5D35B">Repeater B</p>
+<p style="position:absolute;left:96px;top:382px;width:150px;font-size:24px;font-weight:600;text-align:right;color:#F5D35B">Repeater C</p>
+<p style="position:absolute;left:794px;top:382px;width:150px;font-size:24px;font-weight:600;color:#F5D35B">Repeater D</p>
+<p style="position:absolute;left:480px;top:205px;width:160px;font-size:24px;font-weight:600;text-align:center;color:#E4D9FF">4G Router</p>
+<p style="position:absolute;left:480px;top:302px;width:160px;font-size:26px;font-weight:700;text-align:center;color:#1A1205">Cabinet</p>
+<p style="position:absolute;left:390px;top:424px;width:150px;font-size:24px;text-align:right;color:#5EE6B0">Tier 2</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FBF4DA;border:2px solid #D2B13E;border-radius:12px;padding:18px">
-<div style="display:flex;gap:10px"><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K4</p><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K5</p><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K6</p></div>
-<p style="font-size:24px;font-weight:600;text-align:center;color:#6E5A12">Repeater B</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#0E2A35;border:1px solid #1E4552;border-radius:16px;padding:28px">
+<h3 style="font-size:30px;font-weight:600;color:#FFB547">Syarat lokasi cabinet</h3>
+<ul style="font-size:26px;line-height:1.45;color:#CFE3E4"><li>Titik sentral area kolam</li><li>Dekat jalur listrik utama</li><li>Tidak tergenang saat meluap</li></ul>
 </div>
-</div>
-<div style="display:flex;gap:20px;justify-content:center;align-items:center">
-<p style="font-size:24px;font-weight:600;background:#FFFFFF;border:2px solid #A98BC4;border-radius:10px;padding:14px 20px">4G Router</p>
-<div style="display:flex;flex-direction:column;gap:4px;background:#F8D7B0;border:3px solid #C47A12;border-radius:12px;padding:16px 28px">
-<p style="font-size:26px;font-weight:600;text-align:center">Cabinet IP66</p>
-<p style="font-size:24px;text-align:center">Edge aktif + cadangan · UPS DC</p>
-</div>
-<p style="font-size:24px;font-weight:600;background:#CFE6CC;border:2px solid #5E9A57;border-radius:10px;padding:14px 20px">Tiang Tier 2</p>
-</div>
-<div style="display:flex;gap:20px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FBF4DA;border:2px solid #D2B13E;border-radius:12px;padding:18px">
-<p style="font-size:24px;font-weight:600;text-align:center;color:#6E5A12">Repeater C</p>
-<div style="display:flex;gap:10px"><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K7</p><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K8</p><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K9</p></div>
-</div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FBF4DA;border:2px solid #D2B13E;border-radius:12px;padding:18px">
-<p style="font-size:24px;font-weight:600;text-align:center;color:#6E5A12">Repeater D</p>
-<div style="display:flex;gap:10px"><p style="flex:1;font-size:24px;text-align:center;background:#CFE0F5;border:2px solid #4F75AA;border-radius:8px;padding:14px 0">K10</p><p style="flex:2;font-size:24px;text-align:center;color:#3E555D;padding:14px 0">+ drop ke Tier 2</p></div>
+<div style="display:flex;flex-direction:column;gap:14px;background:#0E2A35;border:1px solid #1E4552;border-radius:16px;padding:28px">
+<div style="display:flex;align-items:center;gap:14px"><div style="width:48px;height:7px;background:#FFB547;border-radius:4px"></div><p style="font-size:26px;color:#CFE3E4">Trunk: cabinet → repeater</p></div>
+<div style="display:flex;align-items:center;gap:14px"><div style="width:48px;height:4px;background:#5EE6B0;border-radius:2px"></div><p style="font-size:26px;color:#CFE3E4">Drop: repeater → kolam</p></div>
+<p style="font-size:26px;line-height:1.4;color:#9DBDC2">Grounding rod + arrester di cabinet dan tiang Tier 2</p>
 </div>
 </div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:24px">
-<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;border:1px solid #DCE3E0;border-radius:16px;padding:32px">
-<h3 style="font-size:30px;font-weight:600;color:#8A4F06">Syarat lokasi cabinet</h3>
-<ul style="font-size:26px;line-height:1.45"><li>Titik sentral area kolam</li><li>Dekat jalur listrik utama</li><li>Tidak tergenang saat kolam meluap</li></ul>
-</div>
-<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;border:1px solid #DCE3E0;border-radius:16px;padding:32px">
-<h3 style="font-size:30px;font-weight:600;color:#6E5A12">Kabel</h3>
-<p style="font-size:26px;line-height:1.45">Trunk: cabinet → repeater<br>Drop: repeater → JB kolam / tiang</p>
-<p style="font-size:26px;line-height:1.45">Grounding rod + arrester di cabinet dan tiang</p>
-</div>
-</div>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A6D74">Tampak atas, bukan skala · SmartAqua Pond · 7</p>
-<aside>Denah skematik, tampak atas dan bukan skala. Cabinet IP66 berisi kedua edge unit dan mini UPS ditaruh di tengah, dengan router 4G dan tiang sensor cuaca di dekatnya. Kabel trunk keluar dari cabinet ke empat repeater, lalu kabel drop dari repeater ke junction box tiap kolam. Lokasi cabinet harus sentral, dekat listrik, dan aman dari genangan.</aside>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">Skematik, bukan skala · SmartAqua Pond · 7</p>
+<aside>Denah skematik, tampak atas dan bukan skala. Cabinet IP66 berisi kedua edge unit dan mini UPS ada di tengah, dengan router 4G dan tiang sensor cuaca di dekatnya. Kabel trunk oranye keluar dari cabinet ke empat repeater, lalu kabel drop hijau dari repeater ke junction box tiap kolam. Repeater D juga melayani tiang Tier 2. Lokasi cabinet harus sentral, dekat listrik, dan aman dari genangan.</aside>
 </section>
