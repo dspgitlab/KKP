@@ -41,5 +41,5 @@
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">SmartAqua Pond · High-Level Design · 2</p>
-<aside>Donut ini menunjukkan komposisi 92 node: sepuluh potongan teal adalah sepuluh kolam, masing-masing 9 sensor, dan potongan kecil oranye adalah 2 sensor cuaca bersama. Angka pendukung: 10 kolam, 4 segmen RS485, siklus polling 1 sampai 5 menit.</aside>
+<aside>Kalau harus diringkas dalam satu angka, angkanya 92. Itu jumlah node sensor di satu site. Donut di kiri menunjukkan komposisinya: sepuluh potongan teal adalah sepuluh kolam, masing-masing sembilan sensor, jadi 90 node. Potongan kecil oranye adalah dua sensor cuaca yang dipakai bersama, yaitu tekanan udara dan radiasi matahari. Semua node ini dibagi ke empat segmen jaringan RS485 dan dibaca setiap satu sampai lima menit. Alurnya, kalau dibaca dalam satu napas: sensor dibaca edge unit di lokasi, dikirim ke cloud lewat 4G, diolah menjadi informasi dan peringatan, lalu dipakai untuk menyalakan aerator atau pompa, otomatis maupun manual oleh petambak. Jadi yang kita bangun bukan sekadar alat ukur, melainkan satu rantai lengkap dari data sampai tindakan. Slide berikutnya membedah rantai ini bagian demi bagian.</aside>
 </section>

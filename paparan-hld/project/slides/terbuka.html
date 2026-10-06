@@ -22,5 +22,5 @@
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">SmartAqua Pond · High-Level Design · 14</p>
-<aside>Hal-hal yang di desain masih ditulis sebagai opsi. Pilihan API dan database menentukan arah Tahap 2. Interval polling, antara 1 dan 5 menit, memengaruhi beban bus dan volume data. Ambang batas per parameter dibutuhkan untuk notifikasi dan kontrol otomatis, dan sebaiknya ditetapkan bersama tim budidaya.</aside>
+<aside>Sebelum Tahap 2 dimulai, ada empat keputusan yang kami perlukan dari forum ini. Pertama, stack API: FastAPI atau Express. Keduanya matang; pilihannya lebih banyak ditentukan oleh keahlian tim yang akan memelihara sistem. Kedua, database time-series: InfluxDB yang khusus untuk data waktu, atau PostgreSQL yang lebih serbaguna. Ketiga, interval polling final di rentang satu sampai lima menit. Makin rapat, makin cepat deteksi, tetapi beban jaringan dan volume data juga naik. Keempat, dan ini yang paling penting, nilai ambang batas untuk setiap parameter: berapa oksigen minimum, berapa amonia maksimum, dan seterusnya. Angka inilah yang memicu notifikasi dan kontrol otomatis, jadi sebaiknya ditetapkan bersama tim budidaya. Kami siap menyiapkan rekomendasi untuk masing-masing poin.</aside>
 </section>

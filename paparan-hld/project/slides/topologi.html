@@ -46,5 +46,5 @@
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#7FA0A6">Daisy-chain dalam segmen · repeater isolasi galvanik · oranye aktif, abu putus-putus cadangan · SmartAqua Pond · 6</p>
-<aside>Bus RS485 dibatasi 32 unit-load per segmen, jadi 92 node dipecah ke 4 segmen. Gauge menunjukkan pemakaian tiap segmen: A, B, C masing-masing 27 dari 32, masih aman. Segmen D hanya kolam 10 plus weather station, 11 dari 32, jadi ada ruang ekspansi. Edge aktif melakukan polling bergiliran; edge cadangan punya jalur ke semua repeater dan siap mengambil alih.</aside>
+<aside>Sekarang soal jaringan. RS485 punya batas: satu jalur maksimal 32 unit-load. Kita punya 92 node, jadi tidak mungkin dalam satu jalur. Solusinya, jaringan kami pecah menjadi empat segmen. Gauge di layar menunjukkan pemakaiannya. Segmen A, B, dan C masing-masing melayani tiga kolam: 27 dari 32, masih di bawah batas. Segmen D melayani kolam 10 dan stasiun cuaca, baru 11 dari 32, jadi masih ada ruang untuk ekspansi. Setiap segmen punya repeater dengan isolasi galvanik; artinya, kalau ada gangguan listrik di satu segmen, segmen lain tidak ikut terdampak. Edge aktif membaca keempat segmen secara bergiliran: A, B, C, D. Garis abu-abu putus-putus adalah jalur edge cadangan, yang terhubung ke semua repeater dan siap mengambil alih kapan saja.</aside>
 </section>
