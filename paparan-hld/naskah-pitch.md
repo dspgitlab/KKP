@@ -86,7 +86,7 @@ Pertama, sensor oksigen dipasang dua, bukan satu. Karena oksigen yang memicu kin
 
 Kedua, di panel listrik kolam ada satu modul pengendali. Modul ini menyalakan kincir dan pompa, sekaligus mengecek apakah alatnya benar-benar berputar.
 
-Total ada 112 perangkat untuk sepuluh kolam."
+Semua sensor ini dibaca setiap menit."
 
 TUNJUK: kotak "Klaster tengah" (DO-1 dan DO-2), lalu kotak "Panel · modul I/O" di bawah.
 
@@ -98,13 +98,13 @@ PINDAH: "Semua perangkat ini terhubung lewat kabel data."
 PESAN UTAMA: Kabel dibagi supaya tidak kelebihan beban; jalur ke kincir dipisah supaya selalu jalan.
 
 UCAPKAN:
-"Satu jalur kabel data hanya kuat untuk 32 perangkat. Jadi 112 perangkat kami bagi ke lima jalur, semuanya masih di bawah batas.
+"Satu jalur kabel data hanya kuat untuk 32 perangkat. Jadi perangkat kami bagi per segmen — satu segmen sensor melayani sekitar tiga kolam, tetap di bawah batas.
 
-Jalur kelima, yang berwarna merah, khusus untuk perintah ke kincir. Kenapa dipisah? Kalau jalur sensor bermasalah, perintah ke kincir tetap jalan. Dan karena memakai pasangan kabel kedua di dalam kabel yang sama, tidak perlu galian tambahan.
+Ada segmen terpisah, yang berwarna merah, khusus untuk perintah ke kincir. Kenapa dipisah? Kalau jalur sensor bermasalah, perintah ke kincir tetap jalan. Dan karena memakai pasangan kabel kedua di dalam kabel yang sama, tidak perlu galian tambahan.
 
-Kabelnya disambung berantai dari kolam ke kolam. Lemari panel utama diletakkan di tengah area, di tempat yang tidak tergenang."
+Kabelnya disambung berantai dari kolam ke kolam. Kalau jumlah kolam bertambah, cukup tambah segmen — arsitekturnya tidak berubah."
 
-TUNJUK: lima meteran di atas (30/32 … 10/32), lalu "Segmen E · kontrol".
+TUNJUK: kartu "Segmen sensor" (30/32), lalu "Segmen control", lalu "Scalable".
 
 KALAU DITANYA "Kenapa batasnya 32?": "Itu batas standar kabel data RS485 yang dipakai sensor kelas industri."
 
@@ -287,7 +287,7 @@ PESAN UTAMA: Fase 1 selesai dalam 12–16 minggu, dan kincir otomatis baru dinya
 UCAPKAN:
 "Pelaksanaannya bertahap, mengikuti master plan.
 
-Fase 1 di 10 sampai 20 kolam, selama 12 sampai 16 minggu: dua minggu pertama mengunci lokasi, lalu pemasangan, uji data, pengukuran baseline, uji bersama operator, dan serah terima. Fase 2 menambah prediksi. Fase 3 memperluas ke banyak lokasi.
+Fase 1 di lokasi pilot, selama 12 sampai 16 minggu: dua minggu pertama mengunci lokasi, lalu pemasangan, uji data, pengukuran baseline, uji bersama operator, dan serah terima. Fase 2 menambah prediksi. Fase 3 memperluas ke banyak lokasi.
 
 Satu hal penting — lihat baris bawah. Kincir otomatis tidak langsung dinyalakan. Sistem harus lulus empat uji dulu: dibandingkan dengan alat ukur tangan, batasnya disahkan, diuji saat terjadi kegagalan, dan operator dilatih. Setelah semuanya lulus, baru fitur otomatis diaktifkan."
 
