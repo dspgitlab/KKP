@@ -5,12 +5,12 @@ Sama dengan speaker notes di deck dan di Neopond_HLD_Animasi.pptx.
 ## 1. cover
 
 ⏱ ±20 detik
-PESAN UTAMA: Neopond adalah ekosistem yang meningkatkan sintasan ikan dan memberi dampak ekonomi lewat FCR yang optimal.
+PESAN UTAMA: Neopond adalah ekosistem yang meningkatkan survival rate ikan dan memberi dampak ekonomi lewat FCR yang optimal.
 
 UCAPKAN:
-"Selamat pagi, Bapak dan Ibu. Saya akan memaparkan Neopond — ekosistem pemantauan dan kendali kolam budidaya.
+"Selamat pagi, Bapak dan Ibu. Saya akan memaparkan Neopond — ekosistem pemantauan dan kontrol kolam budidaya.
 
-Tujuannya dua: meningkatkan tingkat hidup ikan atau sintasan, dan memberi dampak ekonomi lewat FCR — efisiensi pakan — yang optimal. Caranya sederhana: air kolam diukur setiap menit, kincir air menyala sendiri saat oksigen turun, pakan dan pertumbuhan tercatat, dan setiap masalah ditangani sampai tuntas.
+Tujuannya dua: meningkatkan survival rate (SR) — tingkat hidup ikan, dan memberi dampak ekonomi lewat FCR — efisiensi pakan — yang optimal. Caranya sederhana: air kolam diukur setiap menit, kincir air menyala sendiri saat oksigen turun, pakan dan pertumbuhan tercatat, dan setiap masalah ditangani sampai tuntas.
 
 Dalam tujuh menit, saya sampaikan empat hal: kenapa ini penting, bagaimana cara kerjanya, posisi kita sekarang, dan lima keputusan yang kami perlukan dari Bapak dan Ibu hari ini."
 
@@ -19,22 +19,22 @@ PINDAH: "Kita mulai dari kenapa ini penting."
 ## 2. penting
 
 ⏱ ±35 detik
-PESAN UTAMA: Oksigen menentukan sintasan, pakan menentukan FCR — Neopond mengelola keduanya dengan data.
+PESAN UTAMA: Oksigen menentukan survival rate, pakan menentukan FCR — Neopond mengelola keduanya dengan data.
 
 UCAPKAN:
 "Ada dua hal yang paling menentukan hasil sebuah kolam.
 
-Pertama, sintasan — berapa banyak ikan yang bertahan sampai panen. Risiko terbesarnya oksigen di dalam air. Oksigen paling rendah menjelang subuh, justru saat tidak ada yang mengukur. Kalau kincir terlambat menyala, dalam hitungan jam ikan bisa mati massal.
+Pertama, survival rate — berapa banyak ikan yang bertahan sampai panen. Risiko terbesarnya oksigen di dalam air. Oksigen paling rendah menjelang subuh, justru saat tidak ada yang mengukur. Kalau kincir terlambat menyala, dalam hitungan jam ikan bisa mati massal.
 
 Kedua, FCR — berapa kilo pakan untuk menghasilkan satu kilo ikan. Kalau pakan tidak disesuaikan dengan kondisi ikan dan air, FCR membengkak dan margin tergerus.
 
 (jeda)
 
-Di tingkat program, alat dan aplikasi masih berbeda di tiap lokasi dan tidak saling terhubung, sehingga sintasan dan FCR antar lokasi tidak bisa dibandingkan.
+Di tingkat program, alat dan aplikasi masih berbeda di tiap lokasi dan tidak saling terhubung, sehingga survival rate dan FCR antar lokasi tidak bisa dibandingkan.
 
 Neopond menjawab ketiganya: kincir bertindak sebelum terlambat, pakan dan pertumbuhan tercatat sehingga FCR bisa dioptimalkan, dan semua lokasi masuk ke satu platform yang terhubung ke STELINA, SICEKATAN, dan Satu Data."
 
-TUNJUK: kartu "Sintasan" dan "FCR" di kiri, lalu tiga baris "Hari ini → Dengan Neopond" di kanan.
+TUNJUK: kartu "Survival rate" dan "FCR" di kiri, lalu tiga baris "Hari ini → Dengan Neopond" di kanan.
 
 PINDAH: "Bagaimana caranya? Ini satu putaran kerjanya."
 
@@ -110,7 +110,7 @@ Jalur kelima, yang berwarna merah, khusus untuk perintah ke kincir. Kenapa dipis
 
 Kabelnya disambung berantai dari kolam ke kolam. Lemari panel utama diletakkan di tengah area, di tempat yang tidak tergenang."
 
-TUNJUK: lima meteran di atas (30/32 … 10/32), lalu "Segmen E · kendali".
+TUNJUK: lima meteran di atas (30/32 … 10/32), lalu "Segmen E · kontrol".
 
 KALAU DITANYA "Kenapa batasnya 32?": "Itu batas standar kabel data RS485 yang dipakai sensor kelas industri."
 
@@ -128,11 +128,11 @@ Di rancangan awal, perintah menyalakan kincir harus lewat cloud. Artinya, kalau 
 
 Sekarang keputusannya dibuat langsung di lokasi, oleh perangkat industri di lemari panel. Oksigen turun, kincir menyala. Air terlalu tinggi, pompa dikunci.
 
-Perangkatnya dua: satu utama, satu cadangan. Kalau yang utama mati, cadangan otomatis mengambil alih. Kalau dua-duanya mati, panel kembali ke posisi aman: kincir tetap menyala.
+Perangkatnya dua: satu utama, satu cadangan. Kalau yang utama mati, cadangan otomatis mengambil alih. Kalau dua-duanya mati, panel kembali ke fail-safe: kincir tetap menyala.
 
 Data juga disimpan dulu di lokasi, lalu dikirim saat internet kembali."
 
-TUNJUK: kotak "Kendali pengaman lokal", lalu "Posisi aman".
+TUNJUK: kotak "Local safety control", lalu "Fail-safe".
 
 KALAU DITANYA "Kenapa bukan Raspberry Pi?": "Untuk pilot di lapangan kami pakai perangkat kelas industri yang tahan air dan panas. Raspberry Pi hanya untuk uji internal, sesuai master plan."
 
@@ -195,14 +195,14 @@ PINDAH: "Di lapangan, laporan dan peringatan berjalan lewat WhatsApp."
 ## 11. wamasuk
 
 ⏱ ±30 detik
-PESAN UTAMA: Laporan lapangan masuk lewat WhatsApp dalam format terstruktur — inilah yang membuat FCR, sintasan, dan hemat energi bisa dihitung.
+PESAN UTAMA: Laporan lapangan masuk lewat WhatsApp dalam format terstruktur — inilah yang membuat FCR, survival rate, dan hemat energi bisa dihitung.
 
 UCAPKAN:
 "Tidak semua data datang dari sensor. Operator melaporkan sembilan jenis catatan lewat WhatsApp — bukan teks bebas, tapi format terstruktur yang divalidasi sistem.
 
 Contohnya: kecerahan air setiap pagi jam sembilan, cek oksigen dengan alat genggam dua kali seminggu untuk mendeteksi sensor yang bergeser, hasil lab, kematian ikan, pakan, perlakuan, air sumber, hasil panen, dan foto meteran listrik.
 
-Ini instrumentasi paling murah, sekaligus paling penting: FCR, sintasan, dan bukti hemat listrik hanya bisa dihitung kalau laporan ini masuk.
+Ini instrumentasi paling murah, sekaligus paling penting: FCR, survival rate, dan bukti hemat listrik hanya bisa dihitung kalau laporan ini masuk.
 
 Di Neopond, catatan dari WhatsApp bisa difilter di riwayat Catat dan Siklus, dan tampil di panel Log manual."
 
@@ -228,17 +228,17 @@ Biayanya sekitar 206 ribu rupiah per kolam per tahun."
 
 TUNJUK: baris S1 dari kiri ke kanan, lalu tiga kotak di bawah.
 
-KALAU DITANYA "Bagaimana kalau HP operator tidak ada sinyal?": "Itu salah satu skenario uji kegagalan di modul Kesiapan Neopond — peringatan naik ke telepon dan ke supervisor."
+KALAU DITANYA "Bagaimana kalau HP operator tidak ada sinyal?": "Itu salah satu skenario failover test di modul Kesiapan Neopond — peringatan naik ke telepon dan ke supervisor."
 
 PINDAH: "Dan sistem ini tidak berhenti di kualitas air."
 
 ## 13. budidaya
 
 ⏱ ±30 detik
-PESAN UTAMA: Di sinilah dampak ekonominya terlihat — sintasan dan FCR terukur per kolam.
+PESAN UTAMA: Di sinilah dampak ekonominya terlihat — survival rate dan FCR terukur per kolam.
 
 UCAPKAN:
-"Dari tebar benih sampai panen, petugas mencatat pakan, kematian, dan berat ikan langsung dari HP atau WhatsApp. Aplikasi menghitung FCR dan sintasan, lengkap dengan saran pakan. FCR yang lebih efisien berarti biaya pakan per kilo ikan lebih rendah — di situlah dampak ekonominya.
+"Dari tebar benih sampai panen, petugas mencatat pakan, kematian, dan berat ikan langsung dari HP atau WhatsApp. Aplikasi menghitung FCR dan survival rate, lengkap dengan saran pakan. FCR yang lebih efisien berarti biaya pakan per kilo ikan lebih rendah — di situlah dampak ekonominya.
 
 Untuk manajemen, semuanya diterjemahkan ke rupiah: nilai stok, biaya per kilo, perkiraan margin, dan kerugian yang berhasil dicegah.
 
@@ -259,7 +259,7 @@ UCAPKAN:
 yang dipantau otomatis setiap saat,
 yang dibersihkan operator setiap minggu,
 yang dikalibrasi teknisi setiap bulan,
-dan uji kegagalan setiap tiga bulan.
+dan failover test setiap tiga bulan.
 
 Aplikasi yang mengingatkan — jadwal kalibrasi otomatis menjadi tugas.
 
@@ -319,7 +319,7 @@ Tiga: sensor dibaca setiap 1 menit.
 
 Empat: teknologi server — kami rekomendasikan open-source, berada di Indonesia.
 
-Lima: sistem KKP mana yang menerima data, dan ukuran apa yang menjadi tanda pilot berhasil — kami usulkan sintasan dan FCR sebagai ukuran utama.
+Lima: sistem KKP mana yang menerima data, dan ukuran apa yang menjadi tanda pilot berhasil — kami usulkan survival rate dan FCR sebagai ukuran utama.
 
 Terima kasih. Saya persilakan pertanyaan dan masukan."
 

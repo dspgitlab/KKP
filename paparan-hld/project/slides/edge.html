@@ -1,6 +1,6 @@
 <section id="edge" data-transition="fade" style="background:radial-gradient(circle at 15% 50%, #2A2010 0%, #071A22 50%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
 <div style="display:flex;flex-direction:column;gap:12px">
-<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#FFB547">Lapis 3–4 · Edge &amp; Uplink</p>
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#FFB547">Layer 3–4 · Edge &amp; Uplink</p>
 <h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#E8F3F2">Aman walau internet putus</h2>
 </div>
 <div style="display:flex;gap:48px;align-items:start">
@@ -16,7 +16,7 @@
 <circle cx="61" cy="65" r="14" fill="#5EE6B0" fill-opacity="0.35"><animate attributeName="r" values="10;24;10" dur="1.2s" repeatCount="indefinite"/></circle>
 <circle cx="61" cy="65" r="8" fill="#5EE6B0"/>
 </svg>
-<p style="position:absolute;left:100px;top:44px;width:400px;font-size:26px;color:#5EE6B0">heartbeat · ambil alih otomatis</p>
+<p style="position:absolute;left:100px;top:44px;width:400px;font-size:26px;color:#5EE6B0">heartbeat · auto failover</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:4px;background:#0D2630;border:2px dashed #FFB547;border-radius:16px;padding:24px 28px">
 <p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#FFB547">CADANGAN</p>
@@ -25,15 +25,15 @@
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:20px">
 <div style="display:flex;flex-direction:column;gap:18px;background:linear-gradient(135deg, #3A2A12, #172024);border:1px solid #6B4E1E;border-radius:16px;padding:30px">
-<div style="display:flex;align-items:center;gap:14px"><x-icon name="Lock" style="width:52px;height:52px;color:#FFB547"></x-icon><h3 style="font-size:34px;font-weight:600;color:#FFB547">Kendali pengaman lokal</h3></div>
+<div style="display:flex;align-items:center;gap:14px"><x-icon name="Lock" style="width:52px;height:52px;color:#FFB547"></x-icon><h3 style="font-size:34px;font-weight:600;color:#FFB547">Local safety control</h3></div>
 <div style="display:flex;gap:16px">
 <p style="flex:1;font-size:28px;color:#E8F3F2;background:#1A1408;border-radius:12px;padding:16px 20px">DO rendah → <b style="color:#5EE6B0">aerator ON</b></p>
 <p style="flex:1;font-size:28px;color:#E8F3F2;background:#1A1408;border-radius:12px;padding:16px 20px">Air tinggi → <b style="color:#FF8A7A">pompa terkunci</b></p>
 </div>
 </div>
 <div style="display:flex;gap:20px">
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0D2630;border:1px solid #1A3C47;border-radius:14px;padding:24px"><p style="font-size:28px;font-weight:600;color:#5EE6B0">Posisi aman</p><p style="font-size:26px;color:#9DBDC2">aerator tetap ON</p></div>
-<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0D2630;border:1px solid #1A3C47;border-radius:14px;padding:24px"><p style="font-size:28px;font-weight:600;color:#3FD0D4">Simpan &amp; kirim</p><p style="font-size:26px;color:#9DBDC2">saat internet pulih</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0D2630;border:1px solid #1A3C47;border-radius:14px;padding:24px"><p style="font-size:28px;font-weight:600;color:#5EE6B0">Fail-safe</p><p style="font-size:26px;color:#9DBDC2">aerator tetap ON</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0D2630;border:1px solid #1A3C47;border-radius:14px;padding:24px"><p style="font-size:28px;font-weight:600;color:#3FD0D4">Store &amp; forward</p><p style="font-size:26px;color:#9DBDC2">saat internet pulih</p></div>
 <div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#0D2630;border:1px solid #1A3C47;border-radius:14px;padding:24px"><p style="font-size:28px;font-weight:600;color:#B79BFF">4G dual SIM</p><p style="font-size:26px;color:#9DBDC2">lewat VPN</p></div>
 </div>
 </div>
@@ -49,11 +49,11 @@ Di rancangan awal, perintah menyalakan kincir harus lewat cloud. Artinya, kalau 
 
 Sekarang keputusannya dibuat langsung di lokasi, oleh perangkat industri di lemari panel. Oksigen turun, kincir menyala. Air terlalu tinggi, pompa dikunci.
 
-Perangkatnya dua: satu utama, satu cadangan. Kalau yang utama mati, cadangan otomatis mengambil alih. Kalau dua-duanya mati, panel kembali ke posisi aman: kincir tetap menyala.
+Perangkatnya dua: satu utama, satu cadangan. Kalau yang utama mati, cadangan otomatis mengambil alih. Kalau dua-duanya mati, panel kembali ke fail-safe: kincir tetap menyala.
 
 Data juga disimpan dulu di lokasi, lalu dikirim saat internet kembali."
 
-TUNJUK: kotak "Kendali pengaman lokal", lalu "Posisi aman".
+TUNJUK: kotak "Local safety control", lalu "Fail-safe".
 
 KALAU DITANYA "Kenapa bukan Raspberry Pi?": "Untuk pilot di lapangan kami pakai perangkat kelas industri yang tahan air dan panas. Raspberry Pi hanya untuk uji internal, sesuai master plan."
 
