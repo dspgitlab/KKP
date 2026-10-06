@@ -1,0 +1,15 @@
+cover 12
+penting 4
+carakerja 18
+arsitektur 7.2
+lapangan 6
+konektivitas 4
+edge 12
+backend 4
+alur 8
+neopond 4
+budidaya 4
+infrastruktur 5
+risiko 4
+operasi 8
+keputusan 3.6
