@@ -1,9 +1,9 @@
-<section id="arsitektur" data-transition="fade" style="background:radial-gradient(circle at 15% 75%, #0F3644 0%, #071A22 55%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
-<div style="display:flex;flex-direction:column;gap:10px">
+<section id="arsitektur" data-transition="fade" style="background:radial-gradient(circle at 15% 75%, #0F3644 0%, #071A22 55%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:12px">
 <p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#3FD0D4">Arsitektur</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:52px;font-weight:600;line-height:1.12;color:#E8F3F2">Tujuh lapis end-to-end: dari sensor, kembali ke sensor</h2>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#E8F3F2">Tujuh lapis end-to-end</h2>
 </div>
-<div style="display:flex;gap:24px;align-items:start">
+<div style="display:flex;gap:40px;align-items:start">
 <div style="position:relative;width:476px;height:491px">
 <svg aria-label="Tumpukan isometrik tujuh lapis dengan titik data beranimasi naik dari Lapangan di dasar ke Aktuasi di puncak" width="476" height="491" viewBox="0 0 476 491" style="position:absolute;left:0px;top:0px;width:476px;height:491px">
 <defs><radialGradient id="arglow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#E8F3F2"/><stop offset="100%" stop-color="#3FD0D4" stop-opacity="0"/></radialGradient></defs>
@@ -13,11 +13,7 @@
 <polygon points="20,490 300,534 300,552 20,508" fill="#B8982A"/><polygon points="300,534 580,490 580,508 300,552" fill="#8E7520"/><polygon points="300,446 580,490 300,534 20,490" fill="#F5D35B" stroke="#FFF1BC"/>
 <polygon points="20,404 300,448 300,466 20,422" fill="#C07F22"/><polygon points="300,448 580,404 580,422 300,466" fill="#94621A"/><polygon points="300,360 580,404 300,448 20,404" fill="#FFB547" stroke="#FFE2B0"/>
 <polygon points="20,318 300,362 300,380 20,336" fill="#7E62C9"/><polygon points="300,362 580,318 580,336 300,380" fill="#6049A0"/><polygon points="300,274 580,318 300,362 20,318" fill="#B79BFF" stroke="#E4D9FF"/>
-</g>
-<g stroke-width="2">
 <polygon points="20,232 300,276 300,294 20,250" fill="#3E7BC2"/><polygon points="300,276 580,232 580,250 300,294" fill="#2F5F99"/><polygon points="300,188 580,232 300,276 20,232" fill="#5AA9FF" stroke="#CFE3FF"/>
-</g>
-<g stroke-width="2">
 <polygon points="20,146 300,190 300,208 20,164" fill="#C2564A"/><polygon points="300,190 580,146 580,164 300,208" fill="#9A3F35"/><polygon points="300,102 580,146 300,190 20,146" fill="#FF8A7A" stroke="#FFD0C8"/>
 <polygon points="20,60 300,104 300,122 20,78" fill="#7A8A8E"/><polygon points="300,104 580,60 580,78 300,122" fill="#5E6C70"/><polygon points="300,16 580,60 300,104 20,60" fill="#A9B8BC" stroke="#E4ECEE"/>
 </g>
@@ -33,20 +29,16 @@
 </svg>
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:8px;padding:17px 0px 0px 0px">
-<div style="height:56px;display:flex;align-items:center;gap:20px;background:#0D2630;border-left:6px solid #A9B8BC;border-radius:10px;padding:0px 20px"><p style="width:250px;font-size:26px;font-weight:600;color:#C9D5D8">7 · Aktuasi <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:24px;color:#9DBDC2">Modul I/O: aerator &amp; pompa + sinyal balik</p><p style="font-size:24px;color:#7FE6E2;background:#12404A;border-radius:20px;padding:2px 16px">kendali di lokasi</p></div>
-<div style="height:56px;display:flex;align-items:center;gap:20px;background:#0D2630;border-left:6px solid #FF8A7A;border-radius:10px;padding:0px 20px"><p style="width:250px;font-size:26px;font-weight:600;color:#FF8A7A">6 · Aplikasi</p><p style="flex:1;font-size:24px;color:#9DBDC2">Neopond + WhatsApp: operasi, siklus, nilai</p><p style="font-size:24px;color:#7FE6E2;background:#12404A;border-radius:20px;padding:2px 16px">aplikasi + WA</p></div>
-<div style="height:56px;display:flex;align-items:center;gap:20px;background:#0D2630;border-left:6px solid #5AA9FF;border-radius:10px;padding:0px 20px"><p style="width:250px;font-size:26px;font-weight:600;color:#5AA9FF">5 · Backend</p><p style="flex:1;font-size:24px;color:#9DBDC2">MQTT, mutu data, aturan, DB, API ke KKP</p><p style="font-size:24px;color:#7FE6E2;background:#12404A;border-radius:20px;padding:2px 16px">cloud</p></div>
-<div style="height:56px;display:flex;align-items:center;gap:20px;background:#0D2630;border-left:6px solid #B79BFF;border-radius:10px;padding:0px 20px"><p style="width:250px;font-size:26px;font-weight:600;color:#B79BFF">4 · Transport</p><p style="flex:1;font-size:24px;color:#9DBDC2">4G dual SIM + cadangan, VPN, MQTT TLS</p><p style="font-size:24px;color:#7FE6E2;background:#12404A;border-radius:20px;padding:2px 16px">uplink</p></div>
-<div style="height:56px;display:flex;align-items:center;gap:20px;background:#0D2630;border-left:6px solid #FFB547;border-radius:10px;padding:0px 20px"><p style="width:250px;font-size:26px;font-weight:600;color:#FFB547">3 · Edge <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:24px;color:#9DBDC2">Gateway IP65 ganda, kendali pengaman lokal</p><p style="font-size:24px;color:#7FE6E2;background:#12404A;border-radius:20px;padding:2px 16px">di lokasi</p></div>
-<div style="height:56px;display:flex;align-items:center;gap:20px;background:#0D2630;border-left:6px solid #F5D35B;border-radius:10px;padding:0px 20px"><p style="width:250px;font-size:26px;font-weight:600;color:#F5D35B">2 · Konektivitas <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:24px;color:#9DBDC2">STP 2 pasang, RS485 5 segmen, repeater</p><p style="font-size:24px;color:#7FE6E2;background:#12404A;border-radius:20px;padding:2px 16px">RS485</p></div>
-<div style="height:56px;display:flex;align-items:center;gap:20px;background:#0D2630;border-left:6px solid #5EE6B0;border-radius:10px;padding:0px 20px"><p style="width:250px;font-size:26px;font-weight:600;color:#5EE6B0">1 · Lapangan <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:24px;color:#9DBDC2">10 sensor/kolam (DO ganda) + cuaca site</p><p style="font-size:24px;color:#7FE6E2;background:#12404A;border-radius:20px;padding:2px 16px">112 perangkat</p></div>
+<div style="height:56px;display:flex;align-items:center;gap:24px;background:#0D2630;border-left:6px solid #A9B8BC;border-radius:10px;padding:0px 24px"><p style="width:300px;font-size:28px;font-weight:600;color:#C9D5D8">7 · Aktuasi <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:26px;color:#9DBDC2">aerator &amp; pompa + sinyal balik</p></div>
+<div style="height:56px;display:flex;align-items:center;gap:24px;background:#0D2630;border-left:6px solid #FF8A7A;border-radius:10px;padding:0px 24px"><p style="width:300px;font-size:28px;font-weight:600;color:#FF8A7A">6 · Aplikasi</p><p style="flex:1;font-size:26px;color:#9DBDC2">Neopond + WhatsApp</p></div>
+<div style="height:56px;display:flex;align-items:center;gap:24px;background:#0D2630;border-left:6px solid #5AA9FF;border-radius:10px;padding:0px 24px"><p style="width:300px;font-size:28px;font-weight:600;color:#5AA9FF">5 · Backend</p><p style="flex:1;font-size:26px;color:#9DBDC2">mutu data, aturan, database</p></div>
+<div style="height:56px;display:flex;align-items:center;gap:24px;background:#0D2630;border-left:6px solid #B79BFF;border-radius:10px;padding:0px 24px"><p style="width:300px;font-size:28px;font-weight:600;color:#B79BFF">4 · Transport</p><p style="flex:1;font-size:26px;color:#9DBDC2">4G dual SIM, VPN</p></div>
+<div style="height:56px;display:flex;align-items:center;gap:24px;background:#0D2630;border-left:6px solid #FFB547;border-radius:10px;padding:0px 24px"><p style="width:300px;font-size:28px;font-weight:600;color:#FFB547">3 · Edge <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:26px;color:#9DBDC2">gateway ganda, kendali lokal</p></div>
+<div style="height:56px;display:flex;align-items:center;gap:24px;background:#0D2630;border-left:6px solid #F5D35B;border-radius:10px;padding:0px 24px"><p style="width:300px;font-size:28px;font-weight:600;color:#F5D35B">2 · Konektivitas <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:26px;color:#9DBDC2">RS485, 5 segmen</p></div>
+<div style="height:56px;display:flex;align-items:center;gap:24px;background:#0D2630;border-left:6px solid #5EE6B0;border-radius:10px;padding:0px 24px"><p style="width:300px;font-size:28px;font-weight:600;color:#5EE6B0">1 · Lapangan <span style="color:#FFB547">◆</span></p><p style="flex:1;font-size:26px;color:#9DBDC2">10 sensor/kolam + cuaca</p></div>
 </div>
 </div>
-<div style="display:flex;gap:20px">
-<p style="flex:1;font-size:24px;line-height:1.4;color:#9DBDC2;background:#0D2630;border-radius:12px;padding:16px 22px"><b style="color:#E8F3F2">Lintas lapis:</b> profil nila (tawar/salin) menentukan batas &amp; sensor · keamanan &amp; OTA · vendor-neutral lewat Modbus RTU</p>
-<p style="flex:1;font-size:24px;line-height:1.4;color:#9DBDC2;background:#2A2112;border-radius:12px;padding:16px 22px"><b style="color:#FFB547">◆ revisi</b> dari rancangan awal: DO ganda, modul kendali + sinyal balik, gateway dengan kendali lokal, segmen kendali</p>
-</div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">Neopond · High-Level Design · 4</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96"><span style="color:#FFB547">◆</span> revisi dari rancangan awal · Neopond · 4</p>
 <aside>⏱ ±25 detik
 PESAN UTAMA: Ini peta lengkapnya — tujuh lapis yang bekerja end-to-end, dari sensor kembali ke sensor.
 

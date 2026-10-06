@@ -152,7 +152,7 @@ Data kemudian dikirim ke STELINA, SICEKATAN, dan Satu Data — melengkapi sistem
 
 Untuk keamanan: server berada di Indonesia, jalurnya terenkripsi sesuai standar BSSN, dan setiap tindakan tercatat."
 
-TUNJUK: alur kotak dari kiri ke kanan, lalu kotak "STELINA · SICEKATAN · Satu Data", lalu baris "Keamanan sejak awal".
+TUNJUK: alur kotak dari kiri ke kanan, lalu kotak "STELINA · SICEKATAN · Satu Data", lalu baris keamanan di bawah.
 
 PINDAH: "Berapa cepat peringatan sampai ke petugas? Ini yang menentukan satu keputusan."
 
@@ -170,7 +170,7 @@ Sekarang lihat tabelnya. Master plan mensyaratkan peringatan kondisi kritis kelu
 
 Karena itu rekomendasi kami: 1 menit."
 
-TUNJUK: baris "Syarat master plan: kritis < 2 menit" (Memenuhi / Tidak memenuhi), lalu kotak "Rekomendasi 1 menit".
+TUNJUK: baris "Syarat kritis < 2 menit" (Memenuhi / Tidak memenuhi), lalu kotak "Rekomendasi 1 menit".
 
 PINDAH: "Sekarang yang dilihat petugas setiap hari: aplikasinya."
 
@@ -188,7 +188,7 @@ Di layar kolam, petugas langsung melihat kondisi air dan satu instruksi: 'Lakuka
 
 Lima peran — operator, supervisor, teknisi, manajer, dan auditor — masing-masing melihat layar sesuai tugasnya, sampai peta tingkat nasional."
 
-TUNJUK: baris alur di atas (Terdeteksi → Selesai), lalu screenshot di tengah.
+TUNJUK: baris alur di atas (Terdeteksi → Selesai), lalu screenshot di kiri.
 
 PINDAH: "Di lapangan, laporan dan peringatan berjalan lewat WhatsApp."
 
@@ -206,7 +206,7 @@ Ini instrumentasi paling murah, sekaligus paling penting: FCR, sintasan, dan buk
 
 Di Neopond, catatan dari WhatsApp bisa difilter di riwayat Catat dan Siklus, dan tampil di panel Log manual."
 
-TUNJUK: tabel sembilan entri, lalu baris berwarna (kematian, pakan, panen, kWh).
+TUNJUK: sembilan kotak entri, lalu kotak berwarna (kematian, pakan, panen, kWh).
 
 PINDAH: "Sebaliknya, WhatsApp juga jalur peringatan keluar."
 
@@ -265,7 +265,7 @@ Aplikasi yang mengingatkan — jadwal kalibrasi otomatis menjadi tugas.
 
 Di belakangnya ada layanan dukungan: gangguan kritis ditangani 24 jam, dengan respons satu jam, semuanya dalam satu kontrak."
 
-TUNJUK: empat kotak dari kiri ke kanan, lalu kotak SLA di kanan bawah.
+TUNJUK: empat kotak dari kiri ke kanan, lalu baris SLA di bawah.
 
 PINDAH: "Kalau ada yang salah, apa jawabannya? Ini ringkasannya."
 
@@ -279,7 +279,7 @@ UCAPKAN:
 
 Lima baris bertanda oranye adalah yang baru kami tambahkan: internet putus, perangkat rusak, sensor kotor, kincir yang tidak berputar, dan alarm palsu. Semuanya sudah dijawab di desain yang tadi saya tunjukkan.
 
-Sisanya — air asin, petir, integrasi dengan sistem KKP, dan keamanan data — juga sudah ada jawabannya."
+Sisanya — air asin, petir, dan keamanan data — juga sudah ada jawabannya."
 
 TUNJUK: lima baris dengan tanda oranye di atas.
 

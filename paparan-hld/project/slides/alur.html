@@ -1,13 +1,14 @@
-<section id="alur" data-transition="fade" style="background:radial-gradient(circle at 50% 40%, #0F3644 0%, #071A22 55%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:22px">
-<div style="display:flex;flex-direction:column;gap:10px">
+<section id="alur" data-transition="fade" style="background:radial-gradient(circle at 50% 40%, #0F3644 0%, #071A22 55%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:12px">
 <p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#3FD0D4">Alur data &amp; kendali</p>
-<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:52px;font-weight:600;line-height:1.12;color:#E8F3F2">Dua kecepatan: keselamatan dalam detik, manajemen dalam menit</h2>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.1;color:#E8F3F2">Dua kecepatan, polling 1 menit</h2>
 </div>
+<div style="display:flex;flex-direction:column;gap:32px">
 <div style="display:flex;gap:24px">
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#1C170D;border:1px solid #5A4318;border-radius:16px;padding:20px 24px">
-<div style="display:flex;align-items:center;gap:14px"><p style="font-size:26px;font-weight:600;color:#FFB547">Putaran lokal · tiap siklus polling</p><p style="font-size:24px;color:#C9B58F;border:1px solid #6B4E1E;border-radius:20px;padding:2px 14px">tanpa internet</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#1C170D;border:1px solid #5A4318;border-radius:16px;padding:20px 24px">
+<p style="font-size:28px;font-weight:600;color:#FFB547">Lokal · detik · tanpa internet</p>
 <div style="position:relative;width:772px;height:170px">
-<svg aria-label="Putaran lokal beranimasi: sensor, edge menilai, modul I/O, aerator ON, sinyal balik, edge cek alat" width="772" height="170" viewBox="0 0 772 170" style="position:absolute;left:0px;top:0px;width:772px;height:170px">
+<svg aria-label="Putaran lokal beranimasi: sensor, edge menilai, modul I/O, aerator ON, sinyal balik, cek alat" width="772" height="170" viewBox="0 0 772 170" style="position:absolute;left:0px;top:0px;width:772px;height:170px">
 <rect x="40" y="24" width="694" height="122" rx="61" fill="none" stroke="#FFB547" stroke-opacity="0.25" stroke-width="12"/>
 <rect x="40" y="24" width="694" height="122" rx="61" fill="none" stroke="#FFB547" stroke-width="3" stroke-dasharray="10 8"><animate attributeName="stroke-dashoffset" from="0" to="-36" dur="1s" repeatCount="indefinite"/></rect>
 <g fill="#FFE2B0"><polygon points="-9,-8 9,0 -9,8"><animateMotion dur="4s" repeatCount="indefinite" rotate="auto" path="M101 24 L673 24 A61 61 0 0 1 673 146 L101 146 A61 61 0 0 1 101 24 Z"/></polygon><polygon points="-9,-8 9,0 -9,8"><animateMotion dur="4s" begin="2s" repeatCount="indefinite" rotate="auto" path="M101 24 L673 24 A61 61 0 0 1 673 146 L101 146 A61 61 0 0 1 101 24 Z"/></polygon></g>
@@ -17,13 +18,13 @@
 <p style="position:absolute;left:514px;top:2px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#1A1205;background:#FFB547;border-radius:22px;padding:6px 0px">Modul I/O</p>
 <p style="position:absolute;left:514px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#06281C;background:#5EE6B0;border-radius:22px;padding:6px 0px">Aerator ON</p>
 <p style="position:absolute;left:272px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#1A1205;background:#FFD08A;border-radius:22px;padding:6px 0px">Sinyal balik</p>
-<p style="position:absolute;left:30px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#1A1205;background:#FFD08A;border-radius:22px;padding:6px 0px">Alat benar jalan?</p>
+<p style="position:absolute;left:30px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#1A1205;background:#FFD08A;border-radius:22px;padding:6px 0px">Cek alat</p>
 </div>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0B1C2A;border:1px solid #24507A;border-radius:16px;padding:20px 24px">
-<div style="display:flex;align-items:center;gap:14px"><p style="font-size:26px;font-weight:600;color:#5AA9FF">Putaran cloud · menit sampai hari</p><p style="font-size:24px;color:#9DB8D8;border:1px solid #24507A;border-radius:20px;padding:2px 14px">lewat 4G</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#0B1C2A;border:1px solid #24507A;border-radius:16px;padding:20px 24px">
+<p style="font-size:28px;font-weight:600;color:#5AA9FF">Cloud · menit sampai hari</p>
 <div style="position:relative;width:772px;height:170px">
-<svg aria-label="Putaran cloud beranimasi: kirim data, cek mutu, aturan, peringatan, tindakan operator, bukti dan laporan" width="772" height="170" viewBox="0 0 772 170" style="position:absolute;left:0px;top:0px;width:772px;height:170px">
+<svg aria-label="Putaran cloud beranimasi: kirim data, cek mutu, aturan, peringatan, operator, bukti" width="772" height="170" viewBox="0 0 772 170" style="position:absolute;left:0px;top:0px;width:772px;height:170px">
 <rect x="40" y="24" width="694" height="122" rx="61" fill="none" stroke="#5AA9FF" stroke-opacity="0.25" stroke-width="12"/>
 <rect x="40" y="24" width="694" height="122" rx="61" fill="none" stroke="#5AA9FF" stroke-width="3" stroke-dasharray="10 8"><animate attributeName="stroke-dashoffset" from="0" to="-36" dur="2s" repeatCount="indefinite"/></rect>
 <g fill="#CFE3FF"><polygon points="-9,-8 9,0 -9,8"><animateMotion dur="8s" repeatCount="indefinite" rotate="auto" path="M101 24 L673 24 A61 61 0 0 1 673 146 L101 146 A61 61 0 0 1 101 24 Z"/></polygon><polygon points="-9,-8 9,0 -9,8"><animateMotion dur="8s" begin="4s" repeatCount="indefinite" rotate="auto" path="M101 24 L673 24 A61 61 0 0 1 673 146 L101 146 A61 61 0 0 1 101 24 Z"/></polygon></g>
@@ -31,28 +32,25 @@
 <p style="position:absolute;left:30px;top:2px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#071A2A;background:#5AA9FF;border-radius:22px;padding:6px 0px">Kirim data</p>
 <p style="position:absolute;left:272px;top:2px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#071A2A;background:#5AA9FF;border-radius:22px;padding:6px 0px">Cek mutu</p>
 <p style="position:absolute;left:514px;top:2px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#071A2A;background:#5AA9FF;border-radius:22px;padding:6px 0px">Aturan</p>
-<p style="position:absolute;left:514px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#2A0E0A;background:#FF8A7A;border-radius:22px;padding:6px 0px">Peringatan</p>
-<p style="position:absolute;left:272px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#071A2A;background:#9CC8FF;border-radius:22px;padding:6px 0px">Operator bertindak</p>
-<p style="position:absolute;left:30px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#071A2A;background:#9CC8FF;border-radius:22px;padding:6px 0px">Bukti &amp; laporan</p>
+<p style="position:absolute;left:514px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#2A0E0A;background:#FF8A7A;border-radius:22px;padding:6px 0px">Peringatan WA</p>
+<p style="position:absolute;left:272px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#071A2A;background:#9CC8FF;border-radius:22px;padding:6px 0px">Operator</p>
+<p style="position:absolute;left:30px;top:124px;width:230px;font-size:24px;font-weight:600;text-align:center;color:#071A2A;background:#9CC8FF;border-radius:22px;padding:6px 0px">Bukti</p>
 </div>
 </div>
 </div>
-<p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#B79BFF">KEPUTUSAN 02 · INTERVAL POLLING MENENTUKAN KECEPATAN PERINGATAN</p>
-<div style="display:flex;gap:24px;align-items:start">
-<table style="width:1080px;font-size:24px;color:#CFE3E4;background:#0D2630">
-<tr style="background:#12323D"><th style="width:44%;text-align:left;color:#9DBDC2"> </th><th style="width:28%;text-align:left;color:#5EE6B0">1 menit</th><th style="width:28%;text-align:left;color:#9DBDC2">5 menit</th></tr>
+<div style="display:flex;gap:24px;align-items:stretch">
+<table style="width:1080px;font-size:26px;color:#CFE3E4;background:#0D2630">
+<tr style="background:#12323D"><th style="width:44%;text-align:left;color:#9DBDC2">Interval polling</th><th style="width:28%;text-align:left;color:#5EE6B0">1 menit</th><th style="width:28%;text-align:left;color:#9DBDC2">5 menit</th></tr>
 <tr><td>Peringatan DO kritis</td><td>±1 menit</td><td>±5 menit</td></tr>
-<tr style="background:#0F2C36"><td>Syarat master plan: kritis &lt; 2 menit</td><td style="color:#5EE6B0">Memenuhi</td><td style="color:#FF8A7A">Tidak memenuhi</td></tr>
-<tr><td>Peringatan lain (3 bacaan)</td><td>±3 menit</td><td>±15 menit</td></tr>
-<tr style="background:#0F2C36"><td>Bacaan per hari (102 sensor)</td><td>±147 ribu</td><td>±29 ribu</td></tr>
+<tr style="background:#0F2C36"><td>Syarat kritis &lt; 2 menit</td><td style="color:#5EE6B0">Memenuhi</td><td style="color:#FF8A7A">Tidak memenuhi</td></tr>
 </table>
-<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:linear-gradient(135deg, #1B6E78, #0E3E4A);border-radius:16px;padding:24px 28px">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;background:linear-gradient(135deg, #1B6E78, #0E3E4A);border-radius:16px;padding:24px 28px">
 <p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#B8F4F2">REKOMENDASI</p>
 <p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1.0;color:#E8F3F2">1 menit</p>
-<p style="font-size:24px;line-height:1.35;color:#D6ECEC">Satu-satunya yang memenuhi &lt; 2 menit. Satu putaran 112 perangkat tetap jauh di bawah 1 menit.</p>
 </div>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">Neopond · High-Level Design · 9</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">Neopond · 9</p>
 <aside>⏱ ±30 detik
 PESAN UTAMA: Sensor dibaca setiap 1 menit — satu-satunya pilihan yang memenuhi syarat master plan.
 
@@ -65,7 +63,7 @@ Sekarang lihat tabelnya. Master plan mensyaratkan peringatan kondisi kritis kelu
 
 Karena itu rekomendasi kami: 1 menit."
 
-TUNJUK: baris "Syarat master plan: kritis &lt; 2 menit" (Memenuhi / Tidak memenuhi), lalu kotak "Rekomendasi 1 menit".
+TUNJUK: baris "Syarat kritis &lt; 2 menit" (Memenuhi / Tidak memenuhi), lalu kotak "Rekomendasi 1 menit".
 
 PINDAH: "Sekarang yang dilihat petugas setiap hari: aplikasinya."</aside>
 </section>
