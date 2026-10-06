@@ -41,17 +41,17 @@ PINDAH: "Bagaimana caranya? Ini satu putaran kerjanya."
 ## 3. carakerja
 
 ⏱ ±35 detik
-PESAN UTAMA: Sistem bekerja sebagai satu putaran — dari mengukur sampai membuktikan hasilnya.
+PESAN UTAMA: Neopond bekerja end-to-end — satu siklus penuh, dari sensor kembali ke sensor.
 
 UCAPKAN:
-"Seluruh sistem bekerja sebagai satu putaran. Ikuti angka satu sampai enam.
+"Neopond bekerja end-to-end, sebagai satu siklus penuh — dari sensor, kembali lagi ke sensor. Ikuti angka satu sampai enam.
 
-Satu, sensor mengukur air setiap menit.
+Satu, sensor mengukur air setiap menit, dilengkapi laporan operator lewat WhatsApp.
 Dua, sistem memastikan datanya benar — misalnya dua sensor oksigen dibandingkan.
 Tiga, sistem memutuskan: apakah sudah melewati batas aman.
 Empat, bertindak: kincir menyala otomatis, dan petugas mendapat tugas.
 Lima, dicek: apakah kincir benar-benar berputar dan oksigen naik lagi.
-Enam, semuanya dicatat sebagai bukti.
+Enam, semuanya dicatat sebagai bukti — lalu sensor kembali mengukur hasilnya. Siklusnya tertutup.
 
 Yang paling penting ada di kotak kanan atas: langkah penyelamatan ini terjadi langsung di lokasi dalam hitungan detik, jadi tetap jalan walaupun internet putus."
 
@@ -63,16 +63,16 @@ PINDAH: "Putaran ini dibangun dari tujuh lapis."
 ## 4. arsitektur
 
 ⏱ ±25 detik
-PESAN UTAMA: Ini peta lengkapnya — sebagian besar sudah didesain, aplikasinya sudah jalan.
+PESAN UTAMA: Ini peta lengkapnya — tujuh lapis yang bekerja end-to-end, dari sensor kembali ke sensor.
 
 UCAPKAN:
 "Ini peta lengkapnya: dari sensor di dalam air di bagian bawah, sampai aplikasi di bagian atas. Cukup perhatikan label di sebelah kanan.
 
-Lapis lapangan, kabel, perangkat di lokasi, dan koneksi internet sudah selesai didesain. Aplikasinya sudah berjalan sebagai prototipe. Yang belum dibangun adalah server di cloud — itu menunggu keputusan nomor empat di akhir paparan.
+Ketujuh lapis ini membentuk satu siklus end-to-end: data naik dari sensor dan laporan WhatsApp, diolah di cloud, tampil di Neopond, lalu kembali ke kolam sebagai tindakan — dan sensor mengukur lagi hasilnya.
 
 Tanda belah ketupat oranye menandai bagian yang kami perbaiki dari rancangan awal. Saya jelaskan di tiga slide berikutnya."
 
-TUNJUK: label status di kanan (Didesain / Prototipe berjalan / Belum dibangun).
+TUNJUK: titik data yang naik di tumpukan kiri, lalu label tiap lapis di kanan.
 
 KALAU DITANYA "Apa itu profil nila?": "Batas aman air untuk nila air tawar dan nila payau berbeda. Sistem memakai batas sesuai jenis kolamnya."
 
@@ -177,10 +177,10 @@ PINDAH: "Sekarang yang dilihat petugas setiap hari: aplikasinya."
 ## 10. neopond
 
 ⏱ ±30 detik
-PESAN UTAMA: Aplikasinya sudah jalan, dan setiap peringatan diikuti sampai selesai.
+PESAN UTAMA: Setiap peringatan diikuti sampai selesai, dan ada buktinya.
 
 UCAPKAN:
-"Ini aplikasi Neopond yang sudah berjalan, masih dengan data contoh.
+"Ini aplikasi Neopond.
 
 Setiap peringatan punya jalur yang jelas — lihat baris atas: terdeteksi, diterima petugas, ditangani, dicek, lalu selesai. Jadi tidak ada peringatan yang menggantung tanpa penanggung jawab.
 
@@ -190,17 +190,57 @@ Lima peran — operator, supervisor, teknisi, manajer, dan auditor — masing-ma
 
 TUNJUK: baris alur di atas (Terdeteksi → Selesai), lalu screenshot di tengah.
 
+PINDAH: "Di lapangan, laporan dan peringatan berjalan lewat WhatsApp."
+
+## 11. wamasuk
+
+⏱ ±30 detik
+PESAN UTAMA: Laporan lapangan masuk lewat WhatsApp dalam format terstruktur — inilah yang membuat FCR, sintasan, dan hemat energi bisa dihitung.
+
+UCAPKAN:
+"Tidak semua data datang dari sensor. Operator melaporkan sembilan jenis catatan lewat WhatsApp — bukan teks bebas, tapi format terstruktur yang divalidasi sistem.
+
+Contohnya: kecerahan air setiap pagi jam sembilan, cek oksigen dengan alat genggam dua kali seminggu untuk mendeteksi sensor yang bergeser, hasil lab, kematian ikan, pakan, perlakuan, air sumber, hasil panen, dan foto meteran listrik.
+
+Ini instrumentasi paling murah, sekaligus paling penting: FCR, sintasan, dan bukti hemat listrik hanya bisa dihitung kalau laporan ini masuk.
+
+Di Neopond, catatan dari WhatsApp bisa difilter di riwayat Catat dan Siklus, dan tampil di panel Log manual."
+
+TUNJUK: tabel sembilan entri, lalu baris berwarna (kematian, pakan, panen, kWh).
+
+PINDAH: "Sebaliknya, WhatsApp juga jalur peringatan keluar."
+
+## 12. wakeluar
+
+⏱ ±35 detik
+PESAN UTAMA: Peringatan naik bertingkat sampai ada yang menerima — dan setiap kejadian kritis meninggalkan bukti.
+
+UCAPKAN:
+"Peringatan dibagi empat tingkat.
+
+S1 kritis — misalnya oksigen di bawah 3 atau aerator tidak merespons: pesan WhatsApp, diulang, lalu telepon. Kalau 15 menit belum diterima, diteruskan ke supervisor; 30 menit, ke kepala lokasi.
+
+S2 waspada: pesan WhatsApp, diteruskan ke supervisor kalau dua jam tidak diterima. S3 saran: ringkasan harian jam delapan pagi. S4 masalah alat sengaja tidak lewat WhatsApp — cukup dashboard dan ringkasan mingguan ke teknisi.
+
+Setiap konfirmasi 'diterima' dicatat, jadi waktu respons petugas terukur. Setelah kejadian S1 selesai, operator menjawab tiga pertanyaan di thread yang sama: apa yang dilakukan, apa yang terjadi tanpa peringatan, dan tanda tangan. Itu menjadi bukti kejadian yang berhasil dicegah.
+
+Biayanya sekitar 206 ribu rupiah per kolam per tahun."
+
+TUNJUK: baris S1 dari kiri ke kanan, lalu tiga kotak di bawah.
+
+KALAU DITANYA "Bagaimana kalau HP operator tidak ada sinyal?": "Itu salah satu skenario uji kegagalan di modul Kesiapan Neopond — peringatan naik ke telepon dan ke supervisor."
+
 PINDAH: "Dan sistem ini tidak berhenti di kualitas air."
 
-## 11. budidaya
+## 13. budidaya
 
 ⏱ ±30 detik
 PESAN UTAMA: Di sinilah dampak ekonominya terlihat — sintasan dan FCR terukur per kolam.
 
 UCAPKAN:
-"Dari tebar benih sampai panen, petugas mencatat pakan, kematian, dan berat ikan langsung dari HP. Aplikasi menghitung FCR dan sintasan, lengkap dengan saran pakan. FCR yang lebih efisien berarti biaya pakan per kilo ikan lebih rendah — di situlah dampak ekonominya.
+"Dari tebar benih sampai panen, petugas mencatat pakan, kematian, dan berat ikan langsung dari HP atau WhatsApp. Aplikasi menghitung FCR dan sintasan, lengkap dengan saran pakan. FCR yang lebih efisien berarti biaya pakan per kilo ikan lebih rendah — di situlah dampak ekonominya.
 
-Untuk manajemen, semuanya diterjemahkan ke rupiah: nilai stok, biaya per kilo, perkiraan margin, dan kerugian yang berhasil dicegah. Angka di layar ini masih contoh.
+Untuk manajemen, semuanya diterjemahkan ke rupiah: nilai stok, biaya per kilo, perkiraan margin, dan kerugian yang berhasil dicegah.
 
 Di pilot, kami ukur baseline untuk empat ukuran yang bisa dibandingkan antar lokasi: tingkat hidup ikan, efisiensi pakan atau FCR, energi per kilo, dan waktu alat menyala."
 
@@ -208,7 +248,7 @@ TUNJUK: baris Tebar → Panen di atas, lalu kotak "KPI sebanding antar site" di 
 
 PINDAH: "Supaya angka-angka ini bisa dipercaya, sensornya harus dirawat."
 
-## 12. infrastruktur
+## 14. infrastruktur
 
 ⏱ ±25 detik
 PESAN UTAMA: Perawatan sensor terjadwal jelas, dan ada SLA.
@@ -229,7 +269,7 @@ TUNJUK: empat kotak dari kiri ke kanan, lalu kotak SLA di kanan bawah.
 
 PINDAH: "Kalau ada yang salah, apa jawabannya? Ini ringkasannya."
 
-## 13. risiko
+## 15. risiko
 
 ⏱ ±20 detik
 PESAN UTAMA: Setiap risiko sudah punya jawaban di desain.
@@ -245,7 +285,7 @@ TUNJUK: lima baris dengan tanda oranye di atas.
 
 PINDAH: "Lalu bagaimana pelaksanaannya?"
 
-## 14. operasi
+## 16. operasi
 
 ⏱ ±35 detik
 PESAN UTAMA: Fase 1 selesai dalam 12–16 minggu, dan kincir otomatis baru dinyalakan setelah lulus empat uji.
@@ -259,11 +299,11 @@ Satu hal penting — lihat baris bawah. Kincir otomatis tidak langsung dinyalaka
 
 TUNJUK: kotak Fase 1, garis minggu 1–16, lalu empat kotak "Gerbang" di bawah.
 
-KALAU DITANYA "Posisi kita sekarang di mana?": "Desain lapangan sudah selesai dan prototipe aplikasi sudah berjalan. Fase 1 mulai setelah keputusan hari ini."
+KALAU DITANYA "Posisi kita sekarang di mana?": "Arsitektur end-to-end sudah lengkap dan aplikasi Neopond sudah berjalan. Fase 1 mulai setelah keputusan hari ini."
 
 PINDAH: "Untuk memulai Fase 1, kami butuh lima keputusan."
 
-## 15. keputusan
+## 17. keputusan
 
 ⏱ ±35 detik
 PESAN UTAMA: Lima keputusan yang kami minta hari ini.

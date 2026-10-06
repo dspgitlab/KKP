@@ -8,6 +8,8 @@ edge 12
 backend 4
 alur 8
 neopond 4
+wamasuk 3
+wakeluar 2
 budidaya 4
 infrastruktur 5
 risiko 4
