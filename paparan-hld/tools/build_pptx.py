@@ -37,6 +37,8 @@ vid_dir = W / "video"
 vid_dir.mkdir(exist_ok=True)
 
 for sid in deck["order"]:
+    if re.search(r"<section[^>]*\shidden", (W / f"live/project/slides/{sid}.html").read_text(encoding="utf-8")):
+        continue
     frames = W / "frames" / sid
     mp4 = vid_dir / f"{sid}.mp4"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", "25", "-i", str(frames / "f%04d.jpg"),
