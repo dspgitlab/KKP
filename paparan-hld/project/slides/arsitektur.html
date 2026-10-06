@@ -1,0 +1,45 @@
+<section id="arsitektur" data-transition="fade" style="background:#F4F6F3;color:#16303A;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#17707A">Arsitektur</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1;color:#0F2A33">Tujuh layer, dari sensor sampai aktuator</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;align-items:center;gap:24px;background:#FFFFFF;border:2px solid #7FB878;border-radius:12px;padding:12px 24px">
+<p style="width:300px;font-size:28px;font-weight:600;color:#2F5E2A">1 · Field</p>
+<p style="flex:1;font-size:26px;color:#16303A">Sensor Tier 1 (9 per kolam) · Tier 2 barometrik + radiasi</p>
+<p style="width:220px;font-size:24px;font-weight:600;text-align:right;color:#17707A">Tahap 1</p>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#FFFFFF;border:2px solid #D2B13E;border-radius:12px;padding:12px 24px">
+<p style="width:300px;font-size:28px;font-weight:600;color:#6E5A12">2 · Connectivity</p>
+<p style="flex:1;font-size:26px;color:#16303A">Kabel STP + junction box · RS485 4 segmen · repeater A–D</p>
+<p style="width:220px;font-size:24px;font-weight:600;text-align:right;color:#17707A">Tahap 1</p>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#FFFFFF;border:2px solid #E9A04E;border-radius:12px;padding:12px 24px">
+<p style="width:300px;font-size:28px;font-weight:600;color:#8A4F06">3 · Edge</p>
+<p style="flex:1;font-size:26px;color:#16303A">RPi 4 aktif + cadangan · buffer lokal · cabinet IP66 + UPS</p>
+<p style="width:220px;font-size:24px;font-weight:600;text-align:right;color:#17707A">Tahap 1</p>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#FFFFFF;border:2px solid #A98BC4;border-radius:12px;padding:12px 24px">
+<p style="width:300px;font-size:28px;font-weight:600;color:#5B3F74">4 · Transport</p>
+<p style="flex:1;font-size:26px;color:#16303A">Router 4G industri dual SIM · fallback WiFi/Ethernet</p>
+<p style="width:220px;font-size:24px;font-weight:600;text-align:right;color:#17707A">Tahap 1</p>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#EEF1F0;border:2px dashed #7FA6DA;border-radius:12px;padding:12px 24px">
+<p style="width:300px;font-size:28px;font-weight:600;color:#2F5689">5 · Backend</p>
+<p style="flex:1;font-size:26px;color:#16303A">MQTT broker · API · hitung NH3 · time-series DB · AI/ML</p>
+<p style="width:220px;font-size:24px;text-align:right;color:#5A6D74">Tahap 2 &amp; 5</p>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#EEF1F0;border:2px dashed #D9827A;border-radius:12px;padding:12px 24px">
+<p style="width:300px;font-size:28px;font-weight:600;color:#8A2F28">6 · Application</p>
+<p style="flex:1;font-size:26px;color:#16303A">Dashboard web/mobile · notifikasi · kontrol + override</p>
+<p style="width:220px;font-size:24px;text-align:right;color:#5A6D74">Tahap 3 &amp; 4</p>
+</div>
+<div style="display:flex;align-items:center;gap:24px;background:#EEF1F0;border:2px dashed #9A9A9A;border-radius:12px;padding:12px 24px">
+<p style="width:300px;font-size:28px;font-weight:600;color:#4A4A4A">7 · Actuation</p>
+<p style="flex:1;font-size:26px;color:#16303A">Relay/kontaktor + fuse → aerator &amp; pompa air</p>
+<p style="width:220px;font-size:24px;text-align:right;color:#5A6D74">Tahap 4</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A6D74">Garis penuh = sudah didesain (Tahap 1) · garis putus-putus = belum dibangun · SmartAqua Pond · 3</p>
+<aside>Ini peta utama paparan. Layer 1 sampai 4 sudah didesain di Tahap 1: sensor, kabel dan bus RS485, edge unit di cabinet, dan uplink 4G. Layer 5 sampai 7 (backend, aplikasi, aktuasi) belum dibangun dan dijadwalkan di Tahap 2 sampai 5. Slide-slide berikutnya membahas tiap layer secara berurutan.</aside>
+</section>

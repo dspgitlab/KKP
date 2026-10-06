@@ -1,0 +1,18 @@
+<section id="keputusan" data-transition="fade" style="background:#F4F6F3;color:#16303A;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#17707A">Keputusan desain</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1;color:#0F2A33">Setiap pilihan menjawab satu risiko di lapangan</h2>
+</div>
+<table style="width:1664px;font-size:28px;color:#16303A;background:#FFFFFF;border:1px solid #DCE3E0">
+<tr style="background:#0F2A33"><th style="width:45%;text-align:left;color:#EEF3F1">Keputusan</th><th style="width:55%;text-align:left;color:#EEF3F1">Risiko yang dijawab</th></tr>
+<tr><td>Bus RS485 dipecah 4 segmen, ≤ 32 UL</td><td>Batas unit-load; segmen terpadat 27/32</td></tr>
+<tr style="background:#F1F5F3"><td>Repeater dengan isolasi galvanik</td><td>Gangguan satu segmen tidak menjalar</td></tr>
+<tr><td>Edge aktif + cadangan, heartbeat</td><td>Polling tetap jalan saat satu RPi mati</td></tr>
+<tr style="background:#F1F5F3"><td>Buffer store-and-forward</td><td>Data tidak hilang saat internet putus</td></tr>
+<tr><td>4G dual SIM + fallback WiFi/Ethernet</td><td>Uplink tetap ada bila satu jalur gagal</td></tr>
+<tr style="background:#F1F5F3"><td>Cabinet IP66, UPS DC, grounding, arrester</td><td>Air, padam listrik, petir dan lonjakan</td></tr>
+<tr><td>TAN, pH, suhu, salinitas satu titik</td><td>NH3 toksik dihitung dengan akurat</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A6D74">SmartAqua Pond · High-Level Design · 12</p>
+<aside>Ringkasan alasan di balik desain Tahap 1. Hampir semua keputusan berangkat dari kondisi tambak: kabel panjang dan banyak node, listrik dan internet yang tidak selalu stabil, serta lingkungan basah dan terbuka. Yang terakhir menyangkut kualitas data: sensor yang dipakai untuk menghitung NH3 harus ditempatkan berdekatan.</aside>
+</section>
