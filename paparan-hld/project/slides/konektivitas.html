@@ -58,6 +58,20 @@
 <ul style="font-size:24px;line-height:1.4;color:#9DBDC2"><li>Dekat jalur listrik utama</li><li>Tidak tergenang saat meluap</li><li>Grounding + arrester</li><li>Trunk → repeater → kolam</li></ul>
 </div>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">SmartAqua Pond · High-Level Design · 6</p>
-<aside>(±30 dtk) Satu bus RS485 maksimal 32 perangkat, jadi 112 perangkat dibagi ke lima segmen. Tiga segmen kolam terisi 30 dari 32, segmen D berisi kolam 10 dan stasiun cuaca, dan segmen E khusus kendali. Segmen kendali memakai pasangan kabel kedua di jalur yang sama, sehingga perintah ke aerator tidak ikut macet saat bus sensor bermasalah, tanpa galian tambahan. Satu segmen dipasang sebagai rantai dengan terminator di ujung — bukan cabang — supaya sinyal stabil di kabel panjang.</aside>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">Neopond · High-Level Design · 6</p>
+<aside>⏱ ±25 detik
+PESAN UTAMA: Kabel dibagi supaya tidak kelebihan beban; jalur ke kincir dipisah supaya selalu jalan.
+
+UCAPKAN:
+"Satu jalur kabel data hanya kuat untuk 32 perangkat. Jadi 112 perangkat kami bagi ke lima jalur, semuanya masih di bawah batas.
+
+Jalur kelima, yang berwarna merah, khusus untuk perintah ke kincir. Kenapa dipisah? Kalau jalur sensor bermasalah, perintah ke kincir tetap jalan. Dan karena memakai pasangan kabel kedua di dalam kabel yang sama, tidak perlu galian tambahan.
+
+Kabelnya disambung berantai dari kolam ke kolam. Lemari panel utama diletakkan di tengah area, di tempat yang tidak tergenang."
+
+TUNJUK: lima meteran di atas (30/32 … 10/32), lalu "Segmen E · kendali".
+
+KALAU DITANYA "Kenapa batasnya 32?": "Itu batas standar kabel data RS485 yang dipakai sensor kelas industri."
+
+PINDAH: "Sekarang perbaikan yang paling penting."</aside>
 </section>

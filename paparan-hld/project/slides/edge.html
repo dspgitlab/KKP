@@ -44,6 +44,24 @@
 </div>
 </div>
 </div>
-<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">SmartAqua Pond · High-Level Design · 7</p>
-<aside>(±30 dtk) Ini revisi paling penting: putus jaringan tidak boleh berarti kolam celaka. Di rancangan awal, aerator dinyalakan lewat cloud — kalau 4G putus malam hari, kontrol ikut mati. Sekarang gateway industri di lokasi yang memutuskan: DO rendah, aerator ON; air terlalu tinggi, pompa terkunci. Kalau kedua gateway mati, panel kembali ke posisi aman: aerator menyala. Cadangan mengambil alih lewat relay watchdog, dan data ditahan saat internet putus.</aside>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">Neopond · High-Level Design · 7</p>
+<aside>⏱ ±30 detik
+PESAN UTAMA: Internet putus tidak berarti kolam celaka.
+
+UCAPKAN:
+"Ini perbaikan yang paling penting.
+
+Di rancangan awal, perintah menyalakan kincir harus lewat cloud. Artinya, kalau sinyal 4G putus malam hari, kincir tidak bisa dinyalakan otomatis.
+
+Sekarang keputusannya dibuat langsung di lokasi, oleh perangkat industri di lemari panel. Oksigen turun, kincir menyala. Air terlalu tinggi, pompa dikunci.
+
+Perangkatnya dua: satu utama, satu cadangan. Kalau yang utama mati, cadangan otomatis mengambil alih. Kalau dua-duanya mati, panel kembali ke posisi aman: kincir tetap menyala.
+
+Data juga disimpan dulu di lokasi, lalu dikirim saat internet kembali."
+
+TUNJUK: kotak "Kendali pengaman lokal", lalu "Posisi aman".
+
+KALAU DITANYA "Kenapa bukan Raspberry Pi?": "Untuk pilot di lapangan kami pakai perangkat kelas industri yang tahan air dan panas. Raspberry Pi hanya untuk uji internal, sesuai master plan."
+
+PINDAH: "Lalu apa yang terjadi saat data sampai di cloud?"</aside>
 </section>

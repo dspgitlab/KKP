@@ -13,6 +13,8 @@ from pptx.util import Emu
 W = Path(sys.argv[1])
 OUT = Path(sys.argv[2])
 deck = json.loads((W / "live/project/deck.json").read_text(encoding="utf-8"))
+nf = W / "notes_final.json"
+notes_json = json.loads(nf.read_text(encoding="utf-8")) if nf.exists() else {}
 loops = dict(l.split() for l in (W / "jobs.txt").read_text().split("\n") if l.strip())
 
 P_NS = "http://schemas.openxmlformats.org/presentationml/2006/main"
@@ -55,10 +57,13 @@ for sid in deck["order"]:
         ext.addprevious(timing)
     else:
         sld.append(timing)
-    src = (W / f"live/project/slides/{sid}.html").read_text(encoding="utf-8")
-    m = re.search(r"<aside>(.*?)</aside>", src, re.S)
-    if m:
-        slide.notes_slide.notes_text_frame.text = html.unescape(m.group(1).strip())
+    if sid in notes_json:
+        slide.notes_slide.notes_text_frame.text = notes_json[sid]
+    else:
+        src = (W / f"live/project/slides/{sid}.html").read_text(encoding="utf-8")
+        m = re.search(r"<aside>(.*?)</aside>", src, re.S)
+        if m:
+            slide.notes_slide.notes_text_frame.text = html.unescape(m.group(1).strip())
     print(sid, mp4.stat().st_size // 1024, "KB")
 
 prs.save(OUT)
