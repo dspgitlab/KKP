@@ -1,54 +1,52 @@
-<section id="cover" data-transition="fade" style="background:radial-gradient(circle at 72% 45%, #0F3A47 0%, #071A22 62%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
-<svg aria-label="Ilustrasi kolam dengan riak air, sepuluh kolam di lingkar luar dan sembilan sensor terhubung ke edge unit di tengah" width="852" height="852" viewBox="0 0 852 852" style="position:absolute;left:940px;top:114px;width:852px;height:852px">
+<section id="cover" data-transition="fade" style="background:radial-gradient(circle at 72% 48%, #0F3A47 0%, #071A22 60%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
+<svg aria-label="Ilustrasi beranimasi: data mengalir dari sensor ke edge unit di tengah, dikelilingi sepuluh kolam" width="852" height="852" viewBox="0 0 852 852" style="position:absolute;left:940px;top:114px;width:852px;height:852px">
 <defs>
-<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3FD0D4" stop-opacity="0.45"/><stop offset="55%" stop-color="#1E7F8A" stop-opacity="0.12"/><stop offset="100%" stop-color="#071A22" stop-opacity="0"/></radialGradient>
-<linearGradient id="hub" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFC56B"/><stop offset="100%" stop-color="#F08A24"/></linearGradient>
+<radialGradient id="cvglow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3FD0D4" stop-opacity="0.4"/><stop offset="55%" stop-color="#1E7F8A" stop-opacity="0.1"/><stop offset="100%" stop-color="#071A22" stop-opacity="0"/></radialGradient>
+<linearGradient id="cvhub" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFC56B"/><stop offset="100%" stop-color="#F08A24"/></linearGradient>
 </defs>
-<circle cx="426" cy="426" r="420" fill="url(#glow)"/>
-<circle cx="426" cy="426" r="110" fill="none" stroke="#3FD0D4" stroke-width="2" stroke-opacity="0.7"/>
-<circle cx="426" cy="426" r="200" fill="none" stroke="#3FD0D4" stroke-width="1.5" stroke-opacity="0.35" stroke-dasharray="4 8"/>
-<circle cx="426" cy="426" r="270" fill="none" stroke="#3FD0D4" stroke-width="1.5" stroke-opacity="0.25"/>
-<circle cx="426" cy="426" r="330" fill="none" stroke="#5EE6B0" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="2 10"/>
-<circle cx="426" cy="426" r="395" fill="none" stroke="#3FD0D4" stroke-width="1" stroke-opacity="0.12"/>
-<g stroke="#3FD0D4" stroke-opacity="0.18" stroke-width="1.5">
+<circle cx="426" cy="426" r="420" fill="url(#cvglow)"/>
+<circle cx="426" cy="426" r="110" fill="none" stroke="#3FD0D4" stroke-width="2" stroke-opacity="0.6"><animate attributeName="r" values="110;150;110" dur="4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="4s" repeatCount="indefinite"/></circle>
+<g><circle cx="426" cy="426" r="200" fill="none" stroke="#3FD0D4" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 10"/><animateTransform attributeName="transform" type="rotate" from="0 426 426" to="360 426 426" dur="80s" repeatCount="indefinite"/></g>
+<circle cx="426" cy="426" r="270" fill="none" stroke="#3FD0D4" stroke-width="1.5" stroke-opacity="0.22"/>
+<g><circle cx="426" cy="426" r="330" fill="none" stroke="#5EE6B0" stroke-width="1.5" stroke-opacity="0.35" stroke-dasharray="2 12"/><animateTransform attributeName="transform" type="rotate" from="360 426 426" to="0 426 426" dur="120s" repeatCount="indefinite"/></g>
+<g stroke="#3FD0D4" stroke-opacity="0.16" stroke-width="1.5">
 <line x1="426" y1="426" x2="426" y2="96"/><line x1="426" y1="426" x2="620" y2="159"/><line x1="426" y1="426" x2="740" y2="324"/><line x1="426" y1="426" x2="740" y2="528"/><line x1="426" y1="426" x2="620" y2="693"/><line x1="426" y1="426" x2="426" y2="756"/><line x1="426" y1="426" x2="232" y2="693"/><line x1="426" y1="426" x2="112" y2="528"/><line x1="426" y1="426" x2="112" y2="324"/><line x1="426" y1="426" x2="232" y2="159"/>
 </g>
-<g stroke="#5EE6B0" stroke-width="2" stroke-opacity="0.75">
-<line x1="426" y1="426" x2="494" y2="238"/><line x1="426" y1="426" x2="599" y2="326"/><line x1="426" y1="426" x2="623" y2="461"/><line x1="426" y1="426" x2="555" y2="579"/><line x1="426" y1="426" x2="426" y2="626"/><line x1="426" y1="426" x2="297" y2="579"/><line x1="426" y1="426" x2="229" y2="461"/><line x1="426" y1="426" x2="253" y2="326"/><line x1="426" y1="426" x2="358" y2="238"/>
+<g stroke="#5EE6B0" stroke-width="2" stroke-opacity="0.7" stroke-dasharray="6 8">
+<line x1="494" y1="238" x2="426" y2="426"/><line x1="599" y1="326" x2="426" y2="426"/><line x1="623" y1="461" x2="426" y2="426"/><line x1="555" y1="579" x2="426" y2="426"/><line x1="426" y1="626" x2="426" y2="426"/><line x1="297" y1="579" x2="426" y2="426"/><line x1="229" y1="461" x2="426" y2="426"/><line x1="253" y1="326" x2="426" y2="426"/><line x1="358" y1="238" x2="426" y2="426"/>
+<animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1s" repeatCount="indefinite"/>
+</g>
+<g fill="#E8F3F2">
+<circle r="5"><animateMotion dur="2.4s" repeatCount="indefinite" path="M494 238 L426 426"/></circle>
+<circle r="5"><animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M623 461 L426 426"/></circle>
+<circle r="5"><animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite" path="M426 626 L426 426"/></circle>
+<circle r="5"><animateMotion dur="2.4s" begin="0.4s" repeatCount="indefinite" path="M229 461 L426 426"/></circle>
+<circle r="5"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M358 238 L426 426"/></circle>
 </g>
 <g fill="#0E3442" stroke="#3FD0D4" stroke-width="2">
 <rect x="396" y="74" width="60" height="44" rx="10"/><rect x="590" y="137" width="60" height="44" rx="10"/><rect x="710" y="302" width="60" height="44" rx="10"/><rect x="710" y="506" width="60" height="44" rx="10"/><rect x="590" y="671" width="60" height="44" rx="10"/><rect x="396" y="734" width="60" height="44" rx="10"/><rect x="202" y="671" width="60" height="44" rx="10"/><rect x="82" y="506" width="60" height="44" rx="10"/><rect x="82" y="302" width="60" height="44" rx="10"/><rect x="202" y="137" width="60" height="44" rx="10"/>
 </g>
-<g fill="#3FD0D4" fill-opacity="0.35">
-<rect x="406" y="92" width="40" height="4" rx="2"/><rect x="600" y="155" width="40" height="4" rx="2"/><rect x="720" y="320" width="40" height="4" rx="2"/><rect x="720" y="524" width="40" height="4" rx="2"/><rect x="600" y="689" width="40" height="4" rx="2"/><rect x="406" y="752" width="40" height="4" rx="2"/><rect x="212" y="689" width="40" height="4" rx="2"/><rect x="92" y="524" width="40" height="4" rx="2"/><rect x="92" y="320" width="40" height="4" rx="2"/><rect x="212" y="155" width="40" height="4" rx="2"/>
-</g>
 <g fill="#5EE6B0" fill-opacity="0.22">
-<circle cx="494" cy="238" r="24"/><circle cx="599" cy="326" r="24"/><circle cx="623" cy="461" r="24"/><circle cx="555" cy="579" r="24"/><circle cx="426" cy="626" r="24"/><circle cx="297" cy="579" r="24"/><circle cx="229" cy="461" r="24"/><circle cx="253" cy="326" r="24"/><circle cx="358" cy="238" r="24"/>
+<circle cx="494" cy="238" r="22"/><circle cx="599" cy="326" r="22"/><circle cx="623" cy="461" r="22"/><circle cx="555" cy="579" r="22"/><circle cx="426" cy="626" r="22"/><circle cx="297" cy="579" r="22"/><circle cx="229" cy="461" r="22"/><circle cx="253" cy="326" r="22"/><circle cx="358" cy="238" r="22"/>
 </g>
 <g fill="#5EE6B0">
 <circle cx="494" cy="238" r="10"/><circle cx="599" cy="326" r="10"/><circle cx="623" cy="461" r="10"/><circle cx="555" cy="579" r="10"/><circle cx="426" cy="626" r="10"/><circle cx="297" cy="579" r="10"/><circle cx="229" cy="461" r="10"/><circle cx="253" cy="326" r="10"/><circle cx="358" cy="238" r="10"/>
 </g>
-<circle cx="426" cy="426" r="78" fill="#F08A24" fill-opacity="0.18"/>
-<polygon points="474.5,398 474.5,454 426,482 377.5,454 377.5,398 426,370" fill="url(#hub)" stroke="#FFE2B0" stroke-width="2"/>
+<circle cx="426" cy="426" r="78" fill="#F08A24" fill-opacity="0.18"><animate attributeName="r" values="70;88;70" dur="2s" repeatCount="indefinite"/></circle>
+<polygon points="474.5,398 474.5,454 426,482 377.5,454 377.5,398 426,370" fill="url(#cvhub)" stroke="#FFE2B0" stroke-width="2"/>
 <rect x="404" y="410" width="44" height="32" rx="6" fill="#071A22" fill-opacity="0.55"/>
 <rect x="412" y="418" width="28" height="4" rx="2" fill="#FFC56B"/><rect x="412" y="428" width="18" height="4" rx="2" fill="#5EE6B0"/>
 </svg>
-<p style="font-size:26px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#3FD0D4">Paparan High-Level Design</p>
-<div style="display:flex;flex-direction:column;gap:32px;width:860px">
-<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:132px;font-weight:700;line-height:0.98;color:#E8F3F2">SmartAqua<br><span style="color:#3FD0D4">Pond</span></h1>
-<p style="font-size:36px;line-height:1.4;color:#9DBDC2">Monitoring kualitas air real-time dan kontrol otomatis aerator/pompa untuk 10 kolam budidaya.</p>
+<p style="font-size:24px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#3FD0D4">High-Level Design · Paparan Manajemen</p>
+<div style="display:flex;flex-direction:column;gap:28px;width:800px">
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:128px;font-weight:700;line-height:0.98;color:#E8F3F2">SmartAqua<br><span style="color:#3FD0D4">Pond</span></h1>
+<p style="font-size:32px;line-height:1.4;color:#9DBDC2">Air kolam diukur tiap menit, aerator bertindak sendiri, dan setiap kejadian ditangani sampai tuntas — untuk 10 kolam budidaya.</p>
 </div>
-<div style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:22px">
 <div style="display:flex;gap:10px">
-<div style="width:96px;height:10px;background:#5EE6B0;border-radius:5px"></div>
-<div style="width:96px;height:10px;background:#F5D35B;border-radius:5px"></div>
-<div style="width:96px;height:10px;background:#FFB547;border-radius:5px"></div>
-<div style="width:96px;height:10px;background:#B79BFF;border-radius:5px"></div>
-<div style="width:96px;height:10px;background:#5AA9FF;border-radius:5px"></div>
-<div style="width:96px;height:10px;background:#FF8A7A;border-radius:5px"></div>
-<div style="width:96px;height:10px;background:#A9B8BC;border-radius:5px"></div>
+<div style="width:88px;height:8px;background:#5EE6B0;border-radius:4px"></div><div style="width:88px;height:8px;background:#F5D35B;border-radius:4px"></div><div style="width:88px;height:8px;background:#FFB547;border-radius:4px"></div><div style="width:88px;height:8px;background:#B79BFF;border-radius:4px"></div><div style="width:88px;height:8px;background:#5AA9FF;border-radius:4px"></div><div style="width:88px;height:8px;background:#FF8A7A;border-radius:4px"></div><div style="width:88px;height:8px;background:#A9B8BC;border-radius:4px"></div>
 </div>
-<p style="font-size:28px;color:#9DBDC2">[Nama Presenter] · [Instansi / Tim] · [Tanggal Paparan]</p>
+<p style="font-size:26px;color:#9DBDC2">PT Digital Solusi Prima · Aplikasi: Neopond · Oktober 2026</p>
 </div>
-<aside>Selamat pagi, Bapak dan Ibu. Terima kasih atas waktunya. Hari ini saya akan memaparkan High-Level Design SmartAqua Pond. Persoalan di kolam budidaya itu sederhana tapi mahal: kualitas air bisa berubah dalam hitungan jam, dan sering baru ketahuan setelah ikan atau udang stres. SmartAqua Pond menjawabnya dengan tiga hal: mengukur kualitas air secara terus-menerus, mengirim datanya ke cloud, dan menyalakan aerator atau pompa secara otomatis saat dibutuhkan, tanpa menunggu petambak berkeliling kolam. Ilustrasi di layar sebenarnya sudah merangkum sistemnya: di tengah ada edge unit, di sekelilingnya sembilan sensor per kolam, dan di lingkar luar sepuluh kolam yang dipantau. Tujuh garis warna di bawah adalah tujuh layer arsitektur yang akan kita telusuri satu per satu, dari sensor di dalam air sampai aksi di kolam.</aside>
+<aside>(±20 dtk) SmartAqua Pond adalah sistem untuk 10 kolam budidaya: air diukur tiap menit, aerator dan pompa bisa bertindak sendiri, dan setiap kejadian ditangani sampai tuntas lewat aplikasi Neopond. Dalam tujuh menit ke depan: kenapa ini penting, bagaimana cara kerjanya dari sensor sampai layar, status sekarang, dan lima keputusan yang kami minta hari ini. Tujuh garis warna mewakili tujuh lapis arsitektur.</aside>
 </section>

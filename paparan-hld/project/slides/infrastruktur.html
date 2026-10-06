@@ -1,0 +1,36 @@
+<section id="infrastruktur" data-transition="fade" style="background:radial-gradient(circle at 50% 0%, #0F3644 0%, #071A22 55%);color:#E8F3F2;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#3FD0D4">Siklus infrastruktur</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:52px;font-weight:600;line-height:1.12;color:#E8F3F2">Sensor yang dirawat adalah sensor yang bisa dipercaya</h2>
+</div>
+<svg aria-label="Lintasan perawatan beranimasi melewati empat ritme: terus-menerus, mingguan, bulanan, per kuartal" width="1664" height="40" viewBox="0 0 1664 40" style="width:1664px;height:40px">
+<line x1="200" y1="20" x2="1464" y2="20" stroke="#1E4552" stroke-width="4" stroke-linecap="round"/>
+<line x1="200" y1="20" x2="1464" y2="20" stroke="#3FD0D4" stroke-width="4" stroke-dasharray="10 12" stroke-opacity="0.7"><animate attributeName="stroke-dashoffset" from="0" to="-44" dur="1s" repeatCount="indefinite"/></line>
+<g stroke="#071A22" stroke-width="4"><circle cx="200" cy="20" r="12" fill="#5EE6B0"/><circle cx="621" cy="20" r="12" fill="#3FD0D4"/><circle cx="1042" cy="20" r="12" fill="#5AA9FF"/><circle cx="1464" cy="20" r="12" fill="#FFB547"/></g>
+<circle r="8" fill="#E8F3F2"><animateMotion dur="5s" repeatCount="indefinite" path="M200 20 L1464 20"/><animate attributeName="opacity" values="0;1;1;0" dur="5s" repeatCount="indefinite"/></circle>
+</svg>
+<div style="display:flex;gap:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#0D2630;border-top:5px solid #5EE6B0;border-radius:14px;padding:20px 24px">
+<p style="font-size:28px;font-weight:600;color:#5EE6B0">Terus-menerus</p><p style="font-size:24px;color:#7FA0A6">otomatis</p>
+<ul style="font-size:24px;line-height:1.35;color:#CFE3E4"><li>Data macet, hilang, lonjakan</li><li>Dua sensor DO tidak sepakat</li><li>Aerator tidak merespons</li><li>Kesehatan edge, UPS, 4G</li></ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#0D2630;border-top:5px solid #3FD0D4;border-radius:14px;padding:20px 24px">
+<p style="font-size:28px;font-weight:600;color:#3FD0D4">Mingguan</p><p style="font-size:24px;color:#7FA0A6">operator</p>
+<ul style="font-size:24px;line-height:1.35;color:#CFE3E4"><li>Bersihkan probe dari lumut &amp; lumpur</li><li>Cek DO dengan alat genggam</li><li>Cek kabel &amp; junction box</li></ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#0D2630;border-top:5px solid #5AA9FF;border-radius:14px;padding:20px 24px">
+<p style="font-size:28px;font-weight:600;color:#5AA9FF">Bulanan</p><p style="font-size:24px;color:#7FA0A6">teknisi</p>
+<ul style="font-size:24px;line-height:1.35;color:#CFE3E4"><li>Kalibrasi DO, pH, EC, TAN</li><li>TAN dicocokkan test kit/lab</li><li>Ganti membran/elektrolit</li></ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;background:#0D2630;border-top:5px solid #FFB547;border-radius:14px;padding:20px 24px">
+<p style="font-size:28px;font-weight:600;color:#FFB547">Per kuartal</p><p style="font-size:24px;color:#7FA0A6">teknisi + supervisor</p>
+<ul style="font-size:24px;line-height:1.35;color:#CFE3E4"><li>Uji kegagalan: cabut 4G, matikan edge, putus sensor</li><li>Cek grounding, arrester, UPS</li></ul>
+</div>
+</div>
+<div style="display:flex;gap:20px">
+<div style="flex:1;display:flex;align-items:center;gap:16px;background:#2A1A1A;border-radius:14px;padding:18px 24px"><x-icon name="Warning" style="width:44px;height:44px;color:#FF8A7A"></x-icon><p style="flex:1;font-size:24px;line-height:1.35;color:#E0C4C0"><b style="color:#FF8A7A">Aplikasi mengingatkan:</b> sensor meragukan ditandai &amp; tak dipakai untuk keputusan; kalibrasi jadi tugas.</p></div>
+<div style="flex:1;display:flex;align-items:center;gap:16px;background:#1E1A34;border-radius:14px;padding:18px 24px"><x-icon name="Clock" style="width:44px;height:44px;color:#B79BFF"></x-icon><p style="flex:1;font-size:24px;line-height:1.35;color:#D0C8E8"><b style="color:#B79BFF">SLA:</b> P1 kritis 24/7, respons 1 j, selesai 8 j · P2 respons 4 j · satu kontrak.</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6F8F96">Frekuensi awal; disetel dengan rekomendasi pabrikan dan data pilot · SmartAqua Pond · 12</p>
+<aside>(±25 dtk) Infrastruktur juga punya siklus. Secara otomatis sistem terus memantau data macet, sensor yang tidak sepakat, aerator yang tidak merespons, dan kesehatan edge. Mingguan operator membersihkan probe dan mengecek DO dengan alat genggam. Bulanan teknisi mengkalibrasi, dan amonia dicocokkan dengan test kit atau lab. Tiap kuartal kami uji kegagalan secara sengaja. Aplikasi yang mengingatkan: jatuh tempo kalibrasi jadi tugas, dan sensor meragukan tidak dipakai untuk keputusan. Di belakangnya ada SLA: gangguan kritis ditangani 24/7 dengan respons satu jam, dalam satu kontrak. Eskalasi: helpdesk, field engineer, lalu solution architect.</aside>
+</section>
