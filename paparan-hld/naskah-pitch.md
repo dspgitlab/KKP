@@ -66,7 +66,7 @@ Ketujuh lapis ini membentuk satu siklus end-to-end: data naik dari sensor dan la
 
 Tanda belah ketupat oranye menandai bagian yang kami perbaiki dari rancangan awal. Saya jelaskan per layer di slide berikutnya."
 
-TUNJUK: titik data yang naik di tumpukan kiri, lalu label tiap lapis di kanan.
+TUNJUK: animasi di kiri — tujuh layer menyatu jadi satu, berputar, lalu kembali bertumpuk — lalu label tiap layer di kanan.
 
 KALAU DITANYA "Apa itu profil nila?": "Batas aman air untuk nila air tawar dan nila payau berbeda. Sistem memakai batas sesuai jenis kolamnya."
 
